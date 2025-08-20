@@ -1,0 +1,929 @@
+<!--
+ __        __   _                _     _____         _                 _                   
+ \ \      / /__| |__   __ _ _ __| |_  |_   _|__  ___| |__  _ __   ___ | | ___   __ _ _   _ 
+  \ \ /\ / / _ \ '_ \ / _` | '__| __|   | |/ _ \/ __| '_ \| '_ \ / _ \| |/ _ \ / _` | | | |
+   \ V  V /  __/ |_) | (_| | |  | |_    | |  __/ (__| | | | | | | (_) | | (_) | (_| | |_| |
+    \_/\_/ \___|_.__/ \__,_|_|   \__|   |_|\___|\___|_| |_|_| |_|\___/|_|\___/ \__, |\__, |
+                                                                               |___/ |___/  
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elevate your brand, Accelerate your growth">
+    <meta name="keywords" content="relevant, keywords, here">
+    <meta name="author" content="Your Name or Company">
+    <meta property="og:title" content="pr3cio">
+    <meta property="og:description" content="Elevate your brand, Accelerate your growth">
+    <meta property=" og:image" content="image-url.jpg">
+    <meta property="og:url" content="page-url">
+    <meta name="robots" content="index, follow">
+    <title>pr3cio</title>
+    <link rel="canonical" href="https://www.yourwebsite.com/page-url">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="./output.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-poppins: "Poppins", sans-serif;
+            --font-protest: "Protest Strike", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body
+    class="bg-size-[100%_auto] bg-no-repeat bg-[#222222] bg-[url('./src/images/store/bg2.webp')] bg-top-left text-white font-poppins">
+    <header
+        class="flex px-5 py-4 justify-between items-center border-b border-b-[rgba(255,255,255,0.15)]  sticky top-0 z-10 backdrop-blur-lg">
+        <div class="headLeft flex justify-between items-center">
+            <span class="w-[4.48rem] sm:w-[4.48rem] md:w-[4.48rem] lg:w-[4.48rem] xl:w-[5.48rem] 2xl:w-[6.48rem]"><a
+                    href="index.html"><img src="./src/images/pr3cio-logo.webp" alt="pr3cio-logo" loading="lazy"
+                        class="w-full" /></a></span>
+            <div class="musicPlayer md:flex justify-between items-center hidden sm:hidden md:ml-4 xl:ml-8 2xl:ml-12">
+                <span class="w-[3.25rem] flex-[0_0_3.25rem]"><a href="#"><img src="./src/images/player-icon/thumb.webp"
+                            alt="pr3cio-logo" loading="lazy" class="w-full rounded-[0.56rem]" /></a></span>
+                <div class="songInfo sm:hidden md:hidden lg:block lg:px-2 xl:px-3 2xl:px-5">
+                    <p class="m-0"><strong
+                            class="font-semibold md:text-xs lg:text-xs xl:text-sm 2xl:text-sm text-white">love me
+                            like you
+                            do</strong></p>
+                    <p class="font-normal md:text-xs lg:text-xs xl:text-[0.75rem] 2xl:text-[0.75rem] text-[#A8A8A8]">
+                        By
+                        Jonsan Doe</p>
+                    <span class="inline-block"><a href="#"
+                            class="text-[#C6FF00] md:text-xs lg:text-xs xl:text-[0.75rem] 2xl:text-[0.75rem]">Follow</a></span>
+                </div>
+                <div class="controlPart sm:pl-4 md:pl-2 pr-4 flex flex-wrap">
+                    <ul class="flex justify-center items-center">
+                        <li class="w-[0.8rem] flex-[0_0_0.8rem]"><a href="#"><img
+                                    src="./src/images/player-icon/shuffle.webp" alt="shuffle" loading="lazy" /></a></li>
+                        <li class="px-2 sm:px-2 md:px-1 xl:px-2 2xl:px-2"><a href="#"
+                                class="flex justify-center items-center bg-[#52534d] w-[1.28rem] h-[1.28rem] rounded-full"><img
+                                    src="./src/images/player-icon/skipBack.webp" alt="skipBack" loading="lazy" /></a>
+                        </li>
+                        <li class="px-2 sm:px-2 md:px-1 xl:px-2 2xl:px-2"><a href="#" id="playBtn"
+                                class="w-[2.03rem] h-[2.03rem] leading-[2.03rem] bg-white text-center  flex justify-center items-center rounded-full"><img
+                                    src="./src/images/player-icon/play.webp" alt="play" loading="lazy" class=""
+                                    id="playIcon" /></a>
+                        </li>
+                        <li class="px-2 sm:px-2 md:px-1 xl:px-2 2xl:px-2"><a href="#"
+                                class="flex justify-center items-center bg-[#52534d] w-[1.28rem] h-[1.28rem] rounded-full"><img
+                                    src="./src/images/player-icon/skipFwd.webp" alt="skipFwd" loading="lazy" /></a></li>
+                        <li class="w-[0.8rem] flex-[0_0_0.8rem]"><a href="#"><img
+                                    src="./src/images/player-icon/repeat.webp" alt="repeat" loading="lazy" /></a>
+                        </li>
+                    </ul>
+                    <audio id="myAudio" class="hidden" src="./src/music.mp3"></audio>
+                    <div class="w-full relative overflow-hidden bg-white h-0.5 mt-4">
+                        <span class="absolute left-0 top-0 w-20 bg-[#ff2663]  h-0.5"></span>
+                    </div>
+                </div>
+                <div
+                    class="volControl flex items-center w-[3.38rem] sm:w-[4.38rem] md:w-[4.38rem] xl:w-[6.38rem] 2xl:w-[9.38rem]">
+                    <span class='w-[0.88rem] flex-[0_0_0.88rem]'><img src="./src/images/player-icon/vol.webp" alt="vol"
+                            loading="lazy" class="w-full " /></span>
+                    <div class="mx-3 w-2xl relative overflow-hidden bg-white h-0.5">
+                        <span
+                            class="absolute left-0 top-0 md:w-1/5 lg:w-1/5 xl:w-1/5 2xl:w-20 bg-[#ff2663]  h-0.5"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headRight flex justify-between items-center">
+            <div class="searchBox relative sm:block hidden">
+                <input type="text" placeholder="Search music, artist"
+                    class="md:w-[11.63rem] xl:w-[13.63rem] 2xl:w-[14.63rem] h-[2.50rem] text-xs rounded-full border-1 border-[#d3d3d3a1] border-solid bg-[linear-gradient(135deg,rgba(211,211,211,0.2)_0%,rgba(152,152,152,0.2)_100%)] text-[#d3d3d3] px-5 py-0" />
+                <button type="submit"
+                    class="w-[1.81rem] h-[1.81rem] leading-[1rem] border-0 bg-white text-center  inline-block rounded-full absolute top-1.5 right-2 cursor-pointer">
+                    <svg width="15" height="15" viewBox="0 0 15 15" class="inline-block" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.8147 10.7916L14.0145 14.0145M12.5357 6.62049C12.5357 9.88737 9.88739 12.5357 6.62051 12.5357C3.35364 12.5357 0.705322 9.88737 0.705322 6.62049C0.705322 3.35362 3.35364 0.705299 6.62051 0.705299C9.88739 0.705299 12.5357 3.35362 12.5357 6.62049Z"
+                            stroke="#6F6F6F" stroke-width="1.40097" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <span class="inline-block ml-3 sm:ml-3 md:ml-3 xl:pl-3 2xl:pl-4"><a href="artist-sign-up.html"
+                    class="text-white font-semibold text-xs sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-sm hover:text-[#ff2663] transition-colors">Sign
+                    up</a></span>
+            <span class="inline-block ml-3 sm:ml-3 md:ml-3 xl:pl-3 2xl:pl-4"><a href="login.html"
+                    class="text-white  font-semibold text-xs sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-sm w-[4.38rem] sm:w-[4.38rem] md:w-[4.38rem] lg:w-[4.38rem] xl:w-[5.38rem] 2xl:w-[6.38rem] h-[2.50rem] hover:bg-[#ff2663] hover:text-white leading-[2.50rem] rounded-full transition-colors border-1 border-[#989898] border-solid text-center inline-block">Log
+                    in</a></span>
+
+            <span
+                class=" sm:hidden inline-block ml-3 sm:ml-3 md:ml-3 xl:pl-3 2xl:pl-4 cursor-pointer font-semibold text-xl hover:text-[#ff2663] transition-colors"
+                onclick="toggleMenu()"><i class="bi bi-list" id="navBtn"></i></span>
+        </div>
+    </header>
+
+    <section class="homeBody flex flex-wrap px-0 sm:px-5 py-4 items-start justify-end">
+        <nav
+            class="menu bg-[#2A2929] py-3 px-3 rounded-0 sm:rounded-xl w-full sm:block flex-[0_0_auto] sm:w-[11.63rem] sm:flex-[0_0_11.63rem] fixed right-[-100%] sm:left-5 top-[4.5rem] sm:top-[7.2rem] h-[100vh] sm:h-screen z-10 transition-all">
+
+            <div class="searchBox relative sm:hidden px-3 mt-4 mb-4">
+                <input type="text" placeholder="Search music, artist"
+                    class="w-full h-[2.50rem] text-xs rounded-full border-1 border-[#d3d3d3a1] border-solid bg-[linear-gradient(135deg,rgba(211,211,211,0.2)_0%,rgba(152,152,152,0.2)_100%)] text-[#d3d3d3] px-5 py-0" />
+                <button type="submit"
+                    class="w-[1.81rem] h-[1.81rem] leading-[1rem] border-0 bg-white text-center  inline-block rounded-full absolute top-1.5 right-5 cursor-pointer">
+                    <svg width="15" height="15" viewBox="0 0 15 15" class="inline-block" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.8147 10.7916L14.0145 14.0145M12.5357 6.62049C12.5357 9.88737 9.88739 12.5357 6.62051 12.5357C3.35364 12.5357 0.705322 9.88737 0.705322 6.62049C0.705322 3.35362 3.35364 0.705299 6.62051 0.705299C9.88739 0.705299 12.5357 3.35362 12.5357 6.62049Z"
+                            stroke="#6F6F6F" stroke-width="1.40097" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <ul>
+                <li class="mb-3"><a href="index.html"
+                        class="group py-2 px-2 flex w-full items-center rounded-[0.3rem_0_0_0.3rem]
+                                                     text-white text-xs sm:text-xs md:text-[0.94rem] font-medium hover:bg-[#505736] hover:shadow-[-3px_0px_0px_0px_#C6FF00_inset] transition-colors">
+                        <span class="w-[1.36rem] flex-[0_0_1.36rem] text-center mr-2">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                class="stroke-current text-[#fff] transition-colors group-hover:text-[#C6FF00]">
+                                xmlns=" http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.8889 8.38889V18C17.8889 19.1046 16.9935 20 15.8889 20H5.11111C4.00654 20 3.11111 19.1046 3.11111 18V8.38889M20 10.5L10.5 1L1 10.5"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </span>
+                        Home</a>
+                </li>
+
+                <li class="mb-3"><a href="#"
+                        class="group py-2 px-2 flex w-full items-center rounded-[0.3rem_0_0_0.3rem]
+                                                    text-xs sm:text-xs md:text-[0.94rem] font-medium bg-[#505736] shadow-[-3px_0px_0px_0px_#C6FF00_inset] text-[#C6FF00] transition-colors">
+                        <span class="w-[1.36rem] flex-[0_0_1.36rem] text-center  mr-2">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="fill-current text-[#C6FF00] transition-colors group-hover:text-[#C6FF00]">
+                                <path
+                                    d="M2.65659 0H4.42765V16H2.65659V0ZM0 0H1.77106V16H0V0ZM5.31318 0H7.08424V16H5.31318V0ZM13.3379 15.8151L7.8272 0.801778L9.48934 0.186667L15 15.2L13.3379 15.8151Z" />
+                            </svg>
+                        </span> My
+                        library <i class="bi bi-chevron-down ml-3 !text-white"></i></a>
+                    <ul class="bg-black pl-10 pt-2 pb-2 border border-1 border-[#373737] rounded-[0_0_0.8rem_0.8rem]">
+                        <li><a href="songs-library.html"
+                                class="text-[#979797] hover:text-white transition-colors mb-2 block font-medium text-sm">Songs</a>
+                        </li>
+                        <li><a href="album-library.html"
+                                class="text-[#979797] hover:text-white transition-colors mb-2 block font-medium text-sm">Albums</a>
+                        </li>
+                        <li><a href="artist-library.html"
+                                class="text-[#979797] hover:text-white transition-colors mb-2 block font-medium text-sm">Artist</a>
+                        </li>
+                        <li><a href="purchase-library.html"
+                                class="text-[#979797] hover:text-white transition-colors font-medium text-sm">Liked</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-3"><a href="artist-listing.html"
+                        class="group py-2 px-2 flex w-full items-center rounded-[0.3rem_0_0_0.3rem]
+                                                     text-white text-xs sm:text-xs md:text-[0.94rem] font-medium hover:bg-[#505736] hover:shadow-[-3px_0px_0px_0px_#C6FF00_inset]">
+                        <span class="w-[1.36rem] flex-[0_0_1.36rem] text-center  mr-2">
+                            <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="fill-current text-[#fff] transition-colors group-hover:text-[#C6FF00]">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.0006 0C9.07218 0 6.69824 2.37394 6.69824 5.30233C6.69824 8.23072 9.07218 10.6047 12.0006 10.6047C14.9289 10.6047 17.3029 8.23072 17.3029 5.30233C17.3029 2.37394 14.9289 0 12.0006 0ZM8.37266 5.30233C8.37266 3.29868 9.99698 1.67442 12.0006 1.67442C14.0042 1.67442 15.6285 3.29868 15.6285 5.30233C15.6285 7.30597 14.0042 8.93023 12.0006 8.93023C9.99698 8.93023 8.37266 7.30597 8.37266 5.30233Z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.64962 5.0992C1.53747 4.65063 1.08292 4.3779 0.634359 4.49004C0.185782 4.60218 -0.086947 5.05674 0.0251944 5.50531L0.45158 7.21084C1.23829 10.3577 3.62349 12.8367 6.69788 13.7622V18.7557C6.69784 19.7586 6.69781 20.5949 6.78708 21.2589C6.88129 21.9597 7.08855 22.5924 7.59698 23.1008C8.10542 23.6092 8.73812 23.8165 9.43892 23.9107C10.1029 24 10.9392 23.9999 11.9422 23.9999H12.0583C13.0613 23.9999 13.8976 24 14.5615 23.9107C15.2623 23.8165 15.8949 23.6092 16.4034 23.1008C16.9119 22.5924 17.1191 21.9597 17.2134 21.2589C17.3026 20.5949 17.3026 19.7586 17.3026 18.7557V14.0751C18.3977 14.4016 19.2344 15.3531 19.3739 16.54L20.0989 22.7024C20.153 23.1616 20.569 23.4901 21.0282 23.4361C21.4875 23.3821 21.8159 22.9659 21.7619 22.5068L21.037 16.3443C20.7641 14.0261 18.7995 12.279 16.4653 12.279H7.62943C4.90186 11.6387 2.75673 9.52763 2.076 6.80472L1.64962 5.0992ZM8.3723 18.6976V13.9534H15.6281V18.6976C15.6281 19.7737 15.6263 20.4966 15.5538 21.0358C15.4846 21.5509 15.3649 21.7714 15.2195 21.9168C15.0739 22.0623 14.8534 22.182 14.3384 22.2513C13.7991 22.3237 13.0763 22.3255 12.0002 22.3255C10.9241 22.3255 10.2012 22.3237 9.66203 22.2513C9.14692 22.182 8.92645 22.0623 8.78098 21.9168C8.63552 21.7714 8.51582 21.5509 8.44656 21.0358C8.37407 20.4966 8.3723 19.7737 8.3723 18.6976Z" />
+                            </svg>
+
+                        </span>
+                        Artists</a></li>
+                <li class="mb-3"><a href="store.html"
+                        class="group py-2 px-2 flex w-full items-center rounded-[0.3rem_0_0_0.3rem]
+                                                     text-white text-xs sm:text-xs md:text-[0.94rem] font-medium hover:bg-[#505736] hover:shadow-[-3px_0px_0px_0px_#C6FF00_inset]">
+                        <span class="w-[1.36rem] flex-[0_0_1.36rem] text-center mr-2">
+                            <svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="stroke-current text-[#fff] transition-colors group-hover:text-[#C6FF00]">
+                                <path
+                                    d="M15.167 14.3749H22.7503M15.167 18.2082H22.7503M21.9487 4.38906C22.0312 4.46204 22.0967 4.54869 22.1414 4.64406C22.186 4.73944 22.209 4.84166 22.209 4.9449C22.209 5.04813 22.186 5.15036 22.1414 5.24573C22.0967 5.3411 22.0312 5.42775 21.9487 5.50073L21.5912 5.81698L20.5837 6.70823L19.5653 5.8074L19.2078 5.48156C19.1253 5.40859 19.0598 5.32194 19.0151 5.22656C18.9704 5.13119 18.9475 5.02897 18.9475 4.92573C18.9475 4.82249 18.9704 4.72027 19.0151 4.6249C19.0598 4.52953 19.1253 4.44288 19.2078 4.3699C19.2894 4.29717 19.3864 4.23945 19.4933 4.20005C19.6003 4.16066 19.7149 4.14038 19.8307 4.14038C19.9466 4.14038 20.0612 4.16066 20.1681 4.20005C20.275 4.23945 20.3721 4.29717 20.4537 4.3699L20.5837 4.4849L20.7028 4.3699C20.8718 4.22786 21.0971 4.15027 21.3302 4.15386C21.5632 4.15744 21.7854 4.24192 21.9487 4.38906Z"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M7.04167 20.1251C9.13575 20.1251 10.8333 18.6234 10.8333 16.7709C10.8333 14.9185 9.13575 13.4167 7.04167 13.4167C4.94759 13.4167 3.25 14.9185 3.25 16.7709C3.25 18.6234 4.94759 20.1251 7.04167 20.1251Z"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15.1663 9.58333C15.3879 9.27072 15.5358 8.92176 15.6013 8.55736C15.6667 8.19296 15.6483 7.82062 15.5471 7.46267C15.4459 7.10472 15.2641 6.76852 15.0125 6.47422C14.761 6.17993 14.4448 5.9336 14.083 5.75C12.9026 4.88153 11.8148 3.91917 10.833 2.875V16.7708"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        Store</a>
+                </li>
+                <li class="mb-3"><a href="#"
+                        class="group py-2 px-2 flex w-full items-center rounded-[0.3rem_0_0_0.3rem]
+                                                                     text-white text-xs sm:text-xs md:text-[0.94rem] font-medium hover:bg-[#505736] hover:shadow-[-3px_0px_0px_0px_#C6FF00_inset]">
+                        <span class="w-[1.36rem] flex-[0_0_1.36rem] text-center mr-2">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="stroke-current text-[#fff] transition-colors group-hover:text-[#C6FF00]">
+                                <path d="M11.3999 8.99983H1M1 8.99983L3.79997 6.59985M1 8.99983L3.79997 11.3998"
+                                    stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M6.60156 4.99996C6.61125 3.25995 6.68841 2.31763 7.30311 1.70294C8.00607 1 9.13742 1 11.4001 1H12.2001C14.4628 1 15.5942 1 16.2971 1.70294C17.0001 2.40587 17.0001 3.53723 17.0001 5.79995V12.1999C17.0001 14.4626 17.0001 15.5939 16.2971 16.2969C15.6824 16.9116 14.7401 16.9888 12.9999 16.9985M6.60156 12.9999C6.61125 14.7399 6.68841 15.6822 7.30311 16.2969C7.81615 16.8099 8.55734 16.9486 9.79997 16.986"
+                                    stroke-width="1.4" stroke-linecap="round" />
+                            </svg>
+
+                        </span>
+                        Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="flex items-start flex-wrap w-full sm:w-[calc(100%-11.63rem)]">
+            <div class="flex-1 md:px-5">
+                <!-- New releases -->
+                <div class="grid grid-cols-12 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-6 2xl:gap-8">
+                    <div class="col-span-12 md:col-span-8 relative">
+                        <img src="./src/images/store/1.webp" alt="signs" loading="lazy" class="w-full rounded-2xl" />
+                        <span
+                            class="absolute left-[2.5rem]  m-auto bottom-6 md:bottom-10 lg:bottom-10 xl:bottom-10  2xl:bottom-10 text-center"><a
+                                href="#"
+                                class="bg-[#F9FF45] text-[#2A2F2C] rounded-4xl px-3 md:px-4 lg:px-4 xl:px-6 2xl:px-6 text-xs h-[2.38rem] md:h-[2.38rem] lg:h-[2.38rem] xl:h-[2.38rem] 2xl:h-[2.38rem] leading-[2.38rem] sm:leading-[2.38rem] md:leading-[2.38rem] lg:leading-[2.38rem] xl:leading-[2.38rem] 2xl:leading-[2.38rem] font-semibold inline-block hover:bg-[rgba(249,255,69,0.)] sm:px-4 md:px-4 lg:px-8 text-xs  font-semibold inline-block hover:bg-[rgba(249,255,69,0.82)] transition-colors">Explore
+                                Your Vibe <img src="./src/images/store/ic_round-send.webp" alt="signs" loading="lazy"
+                                    class="inline-block relative ml-1 top-[-0.1rem]" /></a></span>
+                    </div>
+                    <div class="col-span-12 md:col-span-4 relative">
+                        <div
+                            class="bg-[#2A2929] rounded-2xl text-center p-4 bg-[url('./src/images/store/bg3.webp')] bg-cover bg-no-repeat bg-bottom-center">
+                            <h2 class="text-base text-left font-semibold mb-4">Vibe of the Day</h2>
+                            <div class="grid grid-cols-3 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-6 2xl:gap-8">
+                                <div class="group">
+                                    <img src="./src/images/store/2.webp" alt="cover" loading="lazy"
+                                        class="w-full rounded-lg h-[6.69rem] object-cover " />
+                                    <div class="text-center relative top-[-1.5rem]">
+                                        <img src="./src/images/artist/3.webp" alt="user" loading="lazy"
+                                            class="rounded-[100%] h-[3.25rem] w-[3.25rem] object-cover inline-block" />
+                                        <h5 class="text-xs font-semibold mt-2">Lillian Sanchez</h5>
+                                        <p class="text-[0.69rem] text-[#878787]">Artist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Popular albums -->
+                <div class=" flex justify-between sm:justify-between md:justify-between lg:justify-between mt-4 md:mt-8
+                                        mb-4 md:mb-5 items-center">
+                    <h2 class="font-semibold  text-base text-white">Popular albums</h2>
+                    <span class="inline-block text-center"><a href="#"
+                            class="bg-[#F9FF45] text-[#2A2F2C] rounded-4xl px-8 text-xs h-[2.5rem] leading-[2.5rem] font-semibold inline-block hover:bg-[rgba(249,255,69,0.82)] transition-colors">View
+                            all</a></span>
+                </div>
+                <div class="grid grid-cols-1 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="mb-3 md:mb-5">
+                        <div
+                            class="w-full relative overflow-hidden z-0 after:content-[''] after:absolute after:bg-[rgba(0,0,0,0.5)] after:w-full after:h-full after:top-0 after:right-0 after:z-0 rounded-2xl">
+                            <img src="./src/images/home/3.webp" alt="signs" loading="lazy"
+                                class="w-full rounded-2xl block" />
+                            <span
+                                class="playNow absolute left-0 z-1 right-0 top-0 bottom-0 m-auto w-[2rem] h-[2rem] leading-[2rem] 
+                                lg:w-[2.76rem] lg:h-[2.76rem] lg:leading-[2.76rem]
+                                xl:w-[3.76rem] xl:h-[3.76rem] xl:leading-[3.76rem]
+                                2xl:w-[3.76rem] 2xl:h-[3.76rem] 2xl:leading-[3.76rem]
+
+                                text-center bg-[rgba(255,255,255,0.3)] border-1 border-white border-solid rounded-full flex justify-center items-center cursor-pointer">
+                                <img src="./src/images/player-icon/play-big.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative  w-[0.5rem] sm:w-auto" />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-3  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-[#C6FF00] rounded-full cursor-pointer hover:bg-[rgba(200,255,0,0.8)] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/union.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative " />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-13  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-white rounded-full cursor-pointer hover:bg-[#ddd] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/cart.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative" />
+                            </span>
+                        </div>
+                        <h3><a href="#" class="text-white font-semibold text-sm mt-3 block">Maecenas
+                                bibendum</a>
+                        </h3>
+                        <p class="text-white text-xs truncate w-full">Quisque laoreet, risus ac Quisque
+                            laoreet,
+                            risus ac
+                        </p>
+                        <h3 class="text-white font-semibold text-sm mt-1 block">$ 1.30</a></h3>
+                    </div>
+                    <div class="mb-3 md:mb-5">
+                        <div
+                            class="w-full relative overflow-hidden z-0 after:content-[''] after:absolute after:bg-[rgba(0,0,0,0.5)] after:w-full after:h-full after:top-0 after:right-0 after:z-0 rounded-2xl">
+                            <img src="./src/images/home/3.webp" alt="signs" loading="lazy"
+                                class="w-full rounded-2xl block" />
+                            <span
+                                class="playNow absolute left-0 z-1 right-0 top-0 bottom-0 m-auto w-[2rem] h-[2rem] leading-[2rem] 
+                                                    lg:w-[2.76rem] lg:h-[2.76rem] lg:leading-[2.76rem]
+                                                    xl:w-[3.76rem] xl:h-[3.76rem] xl:leading-[3.76rem]
+                                                    2xl:w-[3.76rem] 2xl:h-[3.76rem] 2xl:leading-[3.76rem]
+                    
+                                                    text-center bg-[rgba(255,255,255,0.3)] border-1 border-white border-solid rounded-full flex justify-center items-center cursor-pointer">
+                                <img src="./src/images/player-icon/play-big.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative  w-[0.5rem] sm:w-auto" />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-3  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-[#C6FF00] rounded-full cursor-pointer hover:bg-[rgba(200,255,0,0.8)] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/union.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative " />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-13  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-white rounded-full cursor-pointer hover:bg-[#ddd] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/cart.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative" />
+                            </span>
+                        </div>
+                        <h3><a href="#" class="text-white font-semibold text-sm mt-3 block">Maecenas
+                                bibendum</a>
+                        </h3>
+                        <p class="text-white text-xs truncate w-full">Quisque laoreet, risus ac Quisque
+                            laoreet,
+                            risus ac
+                        </p>
+                        <h3 class="text-white font-semibold text-sm mt-1 block">$ 1.30</a></h3>
+                    </div>
+                    <div class="mb-3 md:mb-5">
+                        <div
+                            class="w-full relative overflow-hidden z-0 after:content-[''] after:absolute after:bg-[rgba(0,0,0,0.5)] after:w-full after:h-full after:top-0 after:right-0 after:z-0 rounded-2xl">
+                            <img src="./src/images/home/3.webp" alt="signs" loading="lazy"
+                                class="w-full rounded-2xl block" />
+                            <span
+                                class="playNow absolute left-0 z-1 right-0 top-0 bottom-0 m-auto w-[2rem] h-[2rem] leading-[2rem] 
+                                                    lg:w-[2.76rem] lg:h-[2.76rem] lg:leading-[2.76rem]
+                                                    xl:w-[3.76rem] xl:h-[3.76rem] xl:leading-[3.76rem]
+                                                    2xl:w-[3.76rem] 2xl:h-[3.76rem] 2xl:leading-[3.76rem]
+                    
+                                                    text-center bg-[rgba(255,255,255,0.3)] border-1 border-white border-solid rounded-full flex justify-center items-center cursor-pointer">
+                                <img src="./src/images/player-icon/play-big.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative  w-[0.5rem] sm:w-auto" />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-3  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-[#C6FF00] rounded-full cursor-pointer hover:bg-[rgba(200,255,0,0.8)] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/union.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative " />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-13  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-white rounded-full cursor-pointer hover:bg-[#ddd] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/cart.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative" />
+                            </span>
+                        </div>
+                        <h3><a href="#" class="text-white font-semibold text-sm mt-3 block">Maecenas
+                                bibendum</a>
+                        </h3>
+                        <p class="text-white text-xs truncate w-full">Quisque laoreet, risus ac Quisque
+                            laoreet,
+                            risus ac
+                        </p>
+                        <h3 class="text-white font-semibold text-sm mt-1 block">$ 1.30</a></h3>
+                    </div>
+                    <div class="mb-3 md:mb-5">
+                        <div
+                            class="w-full relative overflow-hidden z-0 after:content-[''] after:absolute after:bg-[rgba(0,0,0,0.5)] after:w-full after:h-full after:top-0 after:right-0 after:z-0 rounded-2xl">
+                            <img src="./src/images/home/3.webp" alt="signs" loading="lazy"
+                                class="w-full rounded-2xl block" />
+                            <span
+                                class="playNow absolute left-0 z-1 right-0 top-0 bottom-0 m-auto w-[2rem] h-[2rem] leading-[2rem] 
+                                                    lg:w-[2.76rem] lg:h-[2.76rem] lg:leading-[2.76rem]
+                                                    xl:w-[3.76rem] xl:h-[3.76rem] xl:leading-[3.76rem]
+                                                    2xl:w-[3.76rem] 2xl:h-[3.76rem] 2xl:leading-[3.76rem]
+                    
+                                                    text-center bg-[rgba(255,255,255,0.3)] border-1 border-white border-solid rounded-full flex justify-center items-center cursor-pointer">
+                                <img src="./src/images/player-icon/play-big.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative  w-[0.5rem] sm:w-auto" />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-3  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-[#C6FF00] rounded-full cursor-pointer hover:bg-[rgba(200,255,0,0.8)] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/union.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative " />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-13  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-white rounded-full cursor-pointer hover:bg-[#ddd] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/cart.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative" />
+                            </span>
+                        </div>
+                        <h3><a href="#" class="text-white font-semibold text-sm mt-3 block">Maecenas
+                                bibendum</a>
+                        </h3>
+                        <p class="text-white text-xs truncate w-full">Quisque laoreet, risus ac Quisque
+                            laoreet,
+                            risus ac
+                        </p>
+                        <h3 class="text-white font-semibold text-sm mt-1 block">$ 1.30</a></h3>
+                    </div>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2 gap-4 xl:justify-between 2xl:justify-between mb-4 ">
+                    <div>
+                        <!-- Popular artists -->
+                        <div class="bg-[#2A2929] px-5 py-5 rounded-4xl mt-5">
+                            <div
+                                class="flex flex-wrap justify-between xs:justify-between sm:justify-between xl:justify-between 2xl:justify-between  items-center">
+                                <h2 class="font-semibold  text-base text-white">Popular artists</h2>
+                                <span class="inline-block text-center"><a href="#"
+                                        class=" text-[#F9FF45] rounded-4xl px-8 text-xs h-[1.88rem] leading-[1.88rem] font-semibold inline-block hover:bg-[rgba(249,255,69,0.82)] hover:text-black transition-colors border-1 border-[#d3d3d3a1] border-solid ">View
+                                        all</a></span>
+                            </div>
+                            <div
+                                class="grid grid-cols-1 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-4 lg:gap-8 xl::gap-16 justify-center  sm:justify-center md:justify-center lg:justify-center xl:justify-between 2xl:justify-between">
+
+                                <div class="mt-5 text-center relative after:content-[''] after:absolute after:bg-[url('./src/images/artist/line.webp')] after:w-[0.06rem] after:h-[4.50rem] after:transform after:-translate-y-[50%] after:top-[30%] lg:after:right-[0rem] xl:after:right-[-1rem]
+                            2xl:after:right-[-1rem] after:z-0 bg-no-repeat bg-center">
+                                    <a href="#" class="block">
+                                        <img src="./src/images/artist/1.webp" alt="signs" loading="lazy"
+                                            class="w-full rounded-full max-w-[7.63rem] max-h-[7.63rem] object-cover m-auto" />
+                                        <h3 class="text-sm font-semibold mt-3 ">Aiden Collins
+                                        </h3>
+                                        <p class="text-[0.69rem]">Artist</p>
+                                    </a>
+                                </div>
+                                <div class="mt-5 text-center relative after:content-[''] after:absolute after:bg-[url('./src/images/artist/line.webp')] after:w-[0.06rem] after:h-[4.50rem] after:transform after:-translate-y-[50%] after:top-[30%] lg:after:right-[0rem] xl:after:right-[-1rem]
+                            2xl:after:right-[-1rem] after:z-0 bg-no-repeat bg-center">
+                                    <a href="#" class="block">
+                                        <img src="./src/images/artist/2.webp" alt="signs" loading="lazy"
+                                            class="w-full rounded-full max-w-[7.63rem] max-h-[7.63rem] object-cover  m-auto" />
+                                        <h3 class="text-sm font-semibold mt-3 ">Aiden Collins
+                                        </h3>
+                                        <p class="text-[0.69rem]">Artist</p>
+                                    </a>
+                                </div>
+                                <div class="mt-5 text-center relative bg-no-repeat bg-center">
+                                    <a href="#" class="block">
+                                        <img src="./src/images/artist/3.webp" alt="signs" loading="lazy"
+                                            class="w-full rounded-full max-w-[7.63rem] max-h-[7.63rem] object-cover  m-auto" />
+                                        <h3 class="text-sm font-semibold mt-3 ">Aiden Collins
+                                        </h3>
+                                        <p class="text-[0.69rem]">Artist</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trending songs -->
+                        <div class="bg-[#2A2929] px-6 py-6 rounded-4xl mt-5">
+
+                            <div
+                                class="flex flex-wrap justify-between xs:justify-between sm:justify-between xl:justify-between 2xl:justify-between  items-center">
+                                <h2 class="font-semibold  text-base text-white">Trending songs</h2>
+                                <span class="inline-block text-center"><a href="#"
+                                        class=" text-[#F9FF45] rounded-4xl px-8 text-xs h-[1.88rem] leading-[1.88rem] font-semibold inline-block hover:bg-[rgba(249,255,69,0.82)] hover:text-black transition-colors border-1 border-[#d3d3d3a1] border-solid ">View
+                                        all</a></span>
+                            </div>
+
+                            <div
+                                class="songlist flex justify-between items-center pb-5 mt-5  relative after:content-[''] after:absolute after:bg-[url('./src/images/artist/line2.webp')] after:w-full after:h-[0.06rem]  after:bottom-0  after:left-0 after:z-0">
+                                <span class="text-[0.81rem] pr-3">1</span>
+                                <span class=""><img src="./src/images/artist/4.webp" alt="play" loading="lazy"
+                                        class=" inline-block relative w-[2.19rem] h-[2.19rem] object-cover" /></span>
+                                <div class="flex-1 px-3">
+                                    <h6 class="font-semibold text-[0.81rem]">Jungle waves</h6>
+                                    <p class="text-[0.63rem]">Richaartist</p>
+                                </div>
+                                <span
+                                    class="bg-[#D3D7E4] w-[1.31rem] h-[1.31rem] rounded-full leading-[1.31rem] mr-3 flex justify-center items-center cursor-pointer"><img
+                                        src="./src/images/player-icon/play2.webp" alt="play" loading="lazy"
+                                        class="" /></span>
+                                <span class="text-sm pl-3 font-semibold">$ 1.30</span>
+                            </div>
+                            <div
+                                class="songlist flex justify-between items-center pb-5 mt-5  relative after:content-[''] after:absolute after:bg-[url('./src/images/artist/line2.webp')] after:w-full after:h-[0.06rem]  after:bottom-0  after:left-0 after:z-0">
+                                <span class="text-[0.81rem] pr-3">1</span>
+                                <span class=""><img src="./src/images/artist/4.webp" alt="play" loading="lazy"
+                                        class=" inline-block relative w-[2.19rem] h-[2.19rem] object-cover"></span>
+                                <div class="flex-1 px-3">
+                                    <h6 class="font-semibold text-[0.81rem]">Jungle waves</h6>
+                                    <p class="text-[0.63rem]">Richaartist</p>
+                                </div>
+                                <span
+                                    class="bg-[#D3D7E4] w-[1.31rem] h-[1.31rem] rounded-full leading-[1.31rem] mr-3 flex justify-center items-center cursor-pointer"><img
+                                        src="./src/images/player-icon/play2.webp" alt="play" loading="lazy"
+                                        class="" /></span>
+                                <span class="text-sm pl-3 font-semibold">$ 1.30</span>
+                            </div>
+                            <div
+                                class="songlist flex justify-between items-center pb-5 mt-5  relative after:content-[''] after:absolute after:bg-[url('./src/images/artist/line2.webp')] after:w-full after:h-[0.06rem]  after:bottom-0  after:left-0 after:z-0">
+                                <span class="text-[0.81rem] pr-3">1</span>
+                                <span class=""><img src="./src/images/artist/4.webp" alt="play" loading="lazy"
+                                        class=" inline-block relative w-[2.19rem] h-[2.19rem] object-cover" /></span>
+                                <div class="flex-1 px-3">
+                                    <h6 class="font-semibold text-[0.81rem]">Jungle waves</h6>
+                                    <p class="text-[0.63rem]">Richaartist</p>
+                                </div>
+                                <span
+                                    class="bg-[#D3D7E4] w-[1.31rem] h-[1.31rem] rounded-full leading-[1.31rem] mr-3 flex justify-center items-center cursor-pointer"><img
+                                        src="./src/images/player-icon/play2.webp" alt="play" loading="lazy"
+                                        class="" /></span>
+                                <span class="text-sm pl-3 font-semibold">$ 1.30</span>
+                            </div>
+                            <div
+                                class="songlist flex justify-between items-center pb-5 mt-5  relative after:content-[''] after:absolute after:bg-[url('./src/images/artist/line2.webp')] after:w-full after:h-[0.06rem]  after:bottom-0  after:left-0 after:z-0">
+                                <span class="text-[0.81rem] pr-3">1</span>
+                                <span class=""><img src="./src/images/artist/4.webp" alt="play" loading="lazy"
+                                        class=" inline-block relative w-[2.19rem] h-[2.19rem] object-cover" /></span>
+                                <div class="flex-1 px-3">
+                                    <h6 class="font-semibold text-[0.81rem]">Jungle waves</h6>
+                                    <p class="text-[0.63rem]">Richaartist</p>
+                                </div>
+                                <span
+                                    class="bg-[#D3D7E4] w-[1.31rem] h-[1.31rem] rounded-full leading-[1.31rem] mr-3 flex justify-center items-center cursor-pointer"><img
+                                        src="./src/images/player-icon/play2.webp" alt="play" loading="lazy"
+                                        class="" /></span>
+                                <span class="text-sm pl-3 font-semibold">$ 1.30</span>
+                            </div>
+                            <div class="songlist flex justify-between items-center mt-5  relative ">
+                                <span class="text-[0.81rem] pr-3">1</span>
+                                <span class=""><img src="./src/images/artist/4.webp" alt="play" loading="lazy"
+                                        class=" inline-block relative w-[2.19rem] h-[2.19rem] object-cover" /></span>
+                                <div class="flex-1 px-3">
+                                    <h6 class="font-semibold text-[0.81rem]">Jungle waves</h6>
+                                    <p class="text-[0.63rem]">Richaartist</p>
+                                </div>
+                                <span
+                                    class="bg-[#D3D7E4] w-[1.31rem] h-[1.31rem] rounded-full leading-[1.31rem] mr-3 flex justify-center items-center cursor-pointer"><img
+                                        src="./src/images/player-icon/play2.webp" alt="play" loading="lazy"
+                                        class="" /></span>
+                                <span class="text-sm pl-3 font-semibold">$ 1.30</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Top Genres -->
+                    <div class="bg-[#2A2929] px-5 py-6 pb-0 rounded-4xl mt-5 overflow-x-hidden">
+                        <h2 class="font-semibold  text-base text-white mb-6">Top Genres</h2>
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-3 md:gap-3 lg:gap-5 xl::gap-5 sm:justify-center md:justify-center lg:justify-between xl:justify-between 2xl:justify-between">
+
+                            <div class="relative mb-1">
+                                <a href="#"
+                                    class="bg-[#1C57D7] rounded-2xl p-5 flex justify-between items-center text-white">
+                                    <h3 class="text-[0.97rem] font-bold">Pop</h3>
+                                    <span
+                                        class="inline-block w-[2.20rem] h-[2.20rem] rounded-full bg-[rgba(255,255,255,0.2)] text-center leading-[2.3rem] text-sm text-black ">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="relative mb-1">
+                                <a href="#"
+                                    class="bg-[#3122FF] rounded-2xl p-5 flex justify-between items-center text-white">
+                                    <h3 class="text-[0.97rem] font-bold">Country</h3>
+                                    <span
+                                        class="inline-block w-[2.20rem] h-[2.20rem] rounded-full bg-[rgba(255,255,255,0.2)] text-center leading-[2.3rem] text-sm text-black">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="relative mb-1">
+                                <a href="#"
+                                    class="bg-[#3122FF] rounded-2xl p-5 flex justify-between items-center text-white">
+                                    <h3 class="text-[0.97rem] font-bold">R&B/Soul</h3>
+                                    <span
+                                        class="inline-block w-[2.20rem] h-[2.20rem] rounded-full bg-[rgba(255,255,255,0.2)] text-center leading-[2.3rem] text-sm text-black">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="relative mb-1">
+                                <a href="#"
+                                    class="bg-[#1C57D7] rounded-2xl p-5 flex justify-between items-center text-white">
+                                    <h3 class="text-[0.97rem] font-bold">Latin, Pop</h3>
+                                    <span
+                                        class="inline-block w-[2.20rem] h-[2.20rem] rounded-full bg-[rgba(255,255,255,0.2)] text-center leading-[2.3rem] text-sm text-black">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="relative mb-1">
+                                <a href="#"
+                                    class="bg-[#1C57D7] rounded-2xl p-5 flex justify-between items-center text-white">
+                                    <h3 class="text-[0.97rem] font-bold">Pop</h3>
+                                    <span
+                                        class="inline-block w-[2.20rem] h-[2.20rem] rounded-full bg-[rgba(255,255,255,0.2)] text-center leading-[2.3rem] text-sm text-black ">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="relative mb-1">
+                                <a href="#"
+                                    class="bg-[#3122FF] rounded-2xl p-5 flex justify-between items-center text-white">
+                                    <h3 class="text-[0.97rem] font-bold">Country</h3>
+                                    <span
+                                        class="inline-block w-[2.20rem] h-[2.20rem] rounded-full bg-[rgba(255,255,255,0.2)] text-center leading-[2.3rem] text-sm text-black">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="relative mb-1">
+                                <a href="#"
+                                    class="bg-[#3122FF] rounded-2xl p-5 flex justify-between items-center text-white">
+                                    <h3 class="text-[0.97rem] font-bold">R&B/Soul</h3>
+                                    <span
+                                        class="inline-block w-[2.20rem] h-[2.20rem] rounded-full bg-[rgba(255,255,255,0.2)] text-center leading-[2.3rem] text-sm text-black">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="relative mb-1">
+                                <a href="#"
+                                    class="bg-[#1C57D7] rounded-2xl p-5 flex justify-between items-center text-white">
+                                    <h3 class="text-[0.97rem] font-bold">Latin, Pop</h3>
+                                    <span
+                                        class="inline-block w-[2.20rem] h-[2.20rem] rounded-full bg-[rgba(255,255,255,0.2)] text-center leading-[2.3rem] text-sm text-black">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="relative mb-1">
+                                <a href="#"
+                                    class="bg-[#1C57D7] rounded-2xl p-5 flex justify-between items-center text-white">
+                                    <h3 class="text-[0.97rem] font-bold">Pop</h3>
+                                    <span
+                                        class="inline-block w-[2.20rem] h-[2.20rem] rounded-full bg-[rgba(255,255,255,0.2)] text-center leading-[2.3rem] text-sm text-black ">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="relative mb-1">
+                                <a href="#"
+                                    class="bg-[#3122FF] rounded-2xl p-5 flex justify-between items-center text-white">
+                                    <h3 class="text-[0.97rem] font-bold">Country</h3>
+                                    <span
+                                        class="inline-block w-[2.20rem] h-[2.20rem] rounded-full bg-[rgba(255,255,255,0.2)] text-center leading-[2.3rem] text-sm text-black">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="relative mb-1">
+                                <a href="#"
+                                    class="bg-[#3122FF] rounded-2xl p-5 flex justify-between items-center text-white">
+                                    <h3 class="text-[0.97rem] font-bold">R&B/Soul</h3>
+                                    <span
+                                        class="inline-block w-[2.20rem] h-[2.20rem] rounded-full bg-[rgba(255,255,255,0.2)] text-center leading-[2.3rem] text-sm text-black">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="relative mb-1">
+                                <a href="#"
+                                    class="bg-[#1C57D7] rounded-2xl p-5 flex justify-between items-center text-white">
+                                    <h3 class="text-[0.97rem] font-bold">Latin, Pop</h3>
+                                    <span
+                                        class="inline-block w-[2.20rem] h-[2.20rem] rounded-full bg-[rgba(255,255,255,0.2)] text-center leading-[2.3rem] text-sm text-black">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="bg-[#2A2929] px-6 py-6 rounded-4xl mt-5">
+                    <div
+                        class="flex xs:justify-center sm:justify-center lg:justify-between xl:justify-between 2xl:justify-between items-center mb-5">
+                        <h2 class="font-semibold  text-base text-white">Top 10 playlist of the week</h2>
+                    </div>
+                    <div
+                        class="grid grid-cols-1 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-4 xl:justify-between 2xl:justify-between ">
+                        <div class="songs mb-2">
+                            <a href="#" class="block">
+                                <img src="./src/images/songs/1.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative w-full xl:max-w-[10.69rem] xl:max-h-[10.69rem] object-cover m-auto" />
+                            </a>
+                        </div>
+                        <div class="songs mb-2">
+                            <a href="#" class="block">
+                                <img src="./src/images/songs/2.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative w-full xl:max-w-[10.69rem] xl:max-h-[10.69rem] object-cover m-auto" />
+                            </a>
+                        </div>
+                        <div class="songs mb-2">
+                            <a href="#" class="block">
+                                <img src="./src/images/songs/3.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative w-full xl:max-w-[10.69rem] xl:max-h-[10.69rem] object-cover m-auto" />
+                            </a>
+                        </div>
+                        <div class="songs mb-2">
+                            <a href="#" class="block">
+                                <img src="./src/images/songs/4.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative w-full xl:max-w-[10.69rem] xl:max-h-[10.69rem] object-cover m-auto" />
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Popular albums -->
+                <div
+                    class="flex justify-between sm:justify-between  md:justify-between lg:justify-between mt-8 mb-5 items-center">
+                    <h2 class="font-semibold  text-base text-white">Editor's Pick</h2>
+                    <span class="inline-block text-center"><a href="#"
+                            class="bg-[#F9FF45] text-[#2A2F2C] rounded-4xl px-8 text-xs h-[2.5rem] leading-[2.5rem] font-semibold inline-block hover:bg-[rgba(249,255,69,0.82)] transition-colors">View
+                            all</a></span>
+                </div>
+                <div class="grid grid-cols-1 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="mb-5">
+                        <div
+                            class="w-full relative overflow-hidden z-0 after:content-[''] after:absolute after:bg-[rgba(0,0,0,0.5)] after:w-full after:h-full after:top-0 after:right-0 after:z-0 rounded-2xl">
+                            <img src="./src/images/home/3.webp" alt="signs" loading="lazy"
+                                class="w-full rounded-2xl block" />
+                            <span
+                                class="playNow absolute left-0 z-1 right-0 top-0 bottom-0 m-auto w-[2rem] h-[2rem] leading-[2rem] 
+                                                lg:w-[2.76rem] lg:h-[2.76rem] lg:leading-[2.76rem]
+                                                xl:w-[3.76rem] xl:h-[3.76rem] xl:leading-[3.76rem]
+                                                2xl:w-[3.76rem] 2xl:h-[3.76rem] 2xl:leading-[3.76rem]
+                
+                                                text-center bg-[rgba(255,255,255,0.3)] border-1 border-white border-solid rounded-full flex justify-center items-center cursor-pointer">
+                                <img src="./src/images/player-icon/play-big.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative  w-[0.5rem] sm:w-auto" />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-3  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-[#C6FF00] rounded-full cursor-pointer hover:bg-[rgba(200,255,0,0.8)] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/union.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative " />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-13  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-white rounded-full cursor-pointer hover:bg-[#ddd] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/cart.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative" />
+                            </span>
+                        </div>
+                        <h3><a href="#" class="text-white font-semibold text-sm mt-3 block">Maecenas
+                                bibendum</a>
+                        </h3>
+                        <p class="text-white text-xs truncate w-full">Quisque laoreet, risus ac Quisque
+                            laoreet,
+                            risus ac
+                        </p>
+                        <h3 class="text-white font-semibold text-sm mt-1 block">$ 1.30</a></h3>
+                    </div>
+                    <div class="mb-5">
+                        <div
+                            class="w-full relative overflow-hidden z-0 after:content-[''] after:absolute after:bg-[rgba(0,0,0,0.5)] after:w-full after:h-full after:top-0 after:right-0 after:z-0 rounded-2xl">
+                            <img src="./src/images/home/3.webp" alt="signs" loading="lazy"
+                                class="w-full rounded-2xl block" />
+                            <span
+                                class="playNow absolute left-0 z-1 right-0 top-0 bottom-0 m-auto w-[2rem] h-[2rem] leading-[2rem] 
+                                                                    lg:w-[2.76rem] lg:h-[2.76rem] lg:leading-[2.76rem]
+                                                                    xl:w-[3.76rem] xl:h-[3.76rem] xl:leading-[3.76rem]
+                                                                    2xl:w-[3.76rem] 2xl:h-[3.76rem] 2xl:leading-[3.76rem]
+                                    
+                                                                    text-center bg-[rgba(255,255,255,0.3)] border-1 border-white border-solid rounded-full flex justify-center items-center cursor-pointer">
+                                <img src="./src/images/player-icon/play-big.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative  w-[0.5rem] sm:w-auto" />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-3  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-[#C6FF00] rounded-full cursor-pointer hover:bg-[rgba(200,255,0,0.8)] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/union.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative " />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-13  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-white rounded-full cursor-pointer hover:bg-[#ddd] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/cart.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative" />
+                            </span>
+                        </div>
+                        <h3><a href="#" class="text-white font-semibold text-sm mt-3 block">Maecenas
+                                bibendum</a>
+                        </h3>
+                        <p class="text-white text-xs truncate w-full">Quisque laoreet, risus ac Quisque
+                            laoreet,
+                            risus ac
+                        </p>
+                        <h3 class="text-white font-semibold text-sm mt-1 block">$ 1.30</a></h3>
+                    </div>
+                    <div class="mb-5">
+                        <div
+                            class="w-full relative overflow-hidden z-0 after:content-[''] after:absolute after:bg-[rgba(0,0,0,0.5)] after:w-full after:h-full after:top-0 after:right-0 after:z-0 rounded-2xl">
+                            <img src="./src/images/home/3.webp" alt="signs" loading="lazy"
+                                class="w-full rounded-2xl block" />
+                            <span
+                                class="playNow absolute left-0 z-1 right-0 top-0 bottom-0 m-auto w-[2rem] h-[2rem] leading-[2rem] 
+                                                                    lg:w-[2.76rem] lg:h-[2.76rem] lg:leading-[2.76rem]
+                                                                    xl:w-[3.76rem] xl:h-[3.76rem] xl:leading-[3.76rem]
+                                                                    2xl:w-[3.76rem] 2xl:h-[3.76rem] 2xl:leading-[3.76rem]
+                                    
+                                                                    text-center bg-[rgba(255,255,255,0.3)] border-1 border-white border-solid rounded-full flex justify-center items-center cursor-pointer">
+                                <img src="./src/images/player-icon/play-big.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative  w-[0.5rem] sm:w-auto" />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-3  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-[#C6FF00] rounded-full cursor-pointer hover:bg-[rgba(200,255,0,0.8)] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/union.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative " />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-13  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-white rounded-full cursor-pointer hover:bg-[#ddd] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/cart.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative" />
+                            </span>
+                        </div>
+                        <h3><a href="#" class="text-white font-semibold text-sm mt-3 block">Maecenas
+                                bibendum</a>
+                        </h3>
+                        <p class="text-white text-xs truncate w-full">Quisque laoreet, risus ac Quisque
+                            laoreet,
+                            risus ac
+                        </p>
+                        <h3 class="text-white font-semibold text-sm mt-1 block">$ 1.30</a></h3>
+                    </div>
+                    <div class="mb-5">
+                        <div
+                            class="w-full relative overflow-hidden z-0 after:content-[''] after:absolute after:bg-[rgba(0,0,0,0.5)] after:w-full after:h-full after:top-0 after:right-0 after:z-0 rounded-2xl">
+                            <img src="./src/images/home/3.webp" alt="signs" loading="lazy"
+                                class="w-full rounded-2xl block" />
+                            <span
+                                class="playNow absolute left-0 z-1 right-0 top-0 bottom-0 m-auto w-[2rem] h-[2rem] leading-[2rem] 
+                                                                    lg:w-[2.76rem] lg:h-[2.76rem] lg:leading-[2.76rem]
+                                                                    xl:w-[3.76rem] xl:h-[3.76rem] xl:leading-[3.76rem]
+                                                                    2xl:w-[3.76rem] 2xl:h-[3.76rem] 2xl:leading-[3.76rem]
+                                    
+                                                                    text-center bg-[rgba(255,255,255,0.3)] border-1 border-white border-solid rounded-full flex justify-center items-center cursor-pointer">
+                                <img src="./src/images/player-icon/play-big.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative  w-[0.5rem] sm:w-auto" />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-3  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-[#C6FF00] rounded-full cursor-pointer hover:bg-[rgba(200,255,0,0.8)] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/union.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative " />
+                            </span>
+                            <span
+                                class="absolute wishList z-1 right-3 top-13  w-[1.88rem] h-[1.88rem] leading-[1.88rem] text-center bg-white rounded-full cursor-pointer hover:bg-[#ddd] transition-colors flex justify-center items-center">
+                                <img src="./src/images/icons/cart.webp" alt="play" loading="lazy"
+                                    class=" inline-block relative" />
+                            </span>
+                        </div>
+                        <h3><a href="#" class="text-white font-semibold text-sm mt-3 block">Maecenas
+                                bibendum</a>
+                        </h3>
+                        <p class="text-white text-xs truncate w-full">Quisque laoreet, risus ac Quisque
+                            laoreet,
+                            risus ac
+                        </p>
+                        <h3 class="text-white font-semibold text-sm mt-1 block">$ 1.30</a></h3>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class="bg-[#2A2929]  bg-[right_center] bg-[length:70%_auto]  bg-no-repeat bg-none md:bg-[url('./src/images/3.webp')] px-5 py-3 lg:px-10 lg:py-5 rounded-4xl mt-5 mb-5">
+                    <div class="">
+                        <h2 class="text-[1.2rem] lg:text-[1.75rem] text-white font-protest mt-3 mb-5 leading-8">
+                            Mark Your Jam!<br />
+
+                            Tap the heart to keep your top songs<br />
+                            at your fingertips.
+                        </h2>
+
+                        <span class="inline-block text-center"><a href="#"
+                                class=" text-white rounded-4xl px-9 text-xs h-[2.50rem] leading-[2.50rem] font-semibold inline-block hover:bg-[rgba(249,255,69,0.82)] hover:text-black transition-colors border-1 border-[#494949] border-solid ">Log
+                                in to add favorite</a></span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="pl-3 pr-3 w-full sm:w-[calc(100%-11.63rem)] mt-5 ">
+            <div
+                class="bg-[linear-gradient(to_right,rgba(77,65,250,1)_0%,rgba(255,38,99,1)_100%)] rounded-[0.63rem] p-8 flex  justify-between items-center flex-wrap md:flex-nowrap">
+                <div class="md:w-[70%] lg:grow">
+                    <h3 class="text-white text-base font-bold">Your Music Journey Starts Here</h3>
+                    <p class="text-white text-base text-[0.94rem] mb-4">Create an account and unlock
+                        unlimited tracks &
+                        playlists.</p>
+                </div>
+                <span class="inline-block text-center"><a href="#"
+                        class="bg-white text-black rounded-4xl px-4 lg:px-9 text-xs h-[2.50rem] leading-[2.50rem] font-semibold inline-block hover:bg-[rgba(249,255,69,0.82)] hover:text-black transition-colors ">Sign
+                        up now</a></span>
+            </div>
+        </div>
+
+        <footer class="pl-3 pr-3 w-full sm:w-[calc(100%-11.63rem)] text-center text-xs md:text-base mt-5">
+            &copy; Copyright PR3CIO 2025
+        </footer>
+    </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="src/js/script.js"></script>
+
+
+</html>

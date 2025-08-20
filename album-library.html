@@ -1,0 +1,703 @@
+<!--
+ __        __   _                _     _____         _                 _                   
+ \ \      / /__| |__   __ _ _ __| |_  |_   _|__  ___| |__  _ __   ___ | | ___   __ _ _   _ 
+  \ \ /\ / / _ \ '_ \ / _` | '__| __|   | |/ _ \/ __| '_ \| '_ \ / _ \| |/ _ \ / _` | | | |
+   \ V  V /  __/ |_) | (_| | |  | |_    | |  __/ (__| | | | | | | (_) | | (_) | (_| | |_| |
+    \_/\_/ \___|_.__/ \__,_|_|   \__|   |_|\___|\___|_| |_|_| |_|\___/|_|\___/ \__, |\__, |
+                                                                               |___/ |___/  
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elevate your brand, Accelerate your growth">
+    <meta name="keywords" content="relevant, keywords, here">
+    <meta name="author" content="Your Name or Company">
+    <meta property="og:title" content="pr3cio">
+    <meta property="og:description" content="Elevate your brand, Accelerate your growth">
+    <meta property=" og:image" content="image-url.jpg">
+    <meta property="og:url" content="page-url">
+    <meta name="robots" content="index, follow">
+    <title>pr3cio</title>
+    <link rel="canonical" href="https://www.yourwebsite.com/page-url">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="./output.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-poppins: "Poppins", sans-serif;
+            --font-protest: "Protest Strike", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="bg-cover bg-no-repeat bg-[#222222] text-white font-poppins">
+    <header
+        class="flex px-5 py-4 justify-between items-center border-b border-b-[rgba(255,255,255,0.15)]  sticky top-0 z-10 backdrop-blur-lg">
+        <div class="headLeft flex justify-between items-center">
+            <span class="w-[4.48rem] sm:w-[4.48rem] md:w-[4.48rem] lg:w-[4.48rem] xl:w-[5.48rem] 2xl:w-[6.48rem]"><a
+                    href="index.html"><img src="./src/images/pr3cio-logo.webp" alt="pr3cio-logo" loading="lazy"
+                        class="w-full" /></a></span>
+            <div class="musicPlayer md:flex justify-between items-center hidden sm:hidden md:ml-4 xl:ml-8 2xl:ml-12">
+                <span class="w-[3.25rem] flex-[0_0_3.25rem]"><a href="#"><img src="./src/images/player-icon/thumb.webp"
+                            alt="pr3cio-logo" loading="lazy" class="w-full rounded-[0.56rem]" /></a></span>
+                <div class="songInfo sm:hidden md:hidden lg:block lg:px-2 xl:px-3 2xl:px-5">
+                    <p class="m-0"><strong
+                            class="font-semibold md:text-xs lg:text-xs xl:text-sm 2xl:text-sm text-white">love me
+                            like you
+                            do</strong></p>
+                    <p class="font-normal md:text-xs lg:text-xs xl:text-[0.75rem] 2xl:text-[0.75rem] text-[#A8A8A8]">
+                        By
+                        Jonsan Doe</p>
+                    <span class="inline-block"><a href="#"
+                            class="text-[#C6FF00] md:text-xs lg:text-xs xl:text-[0.75rem] 2xl:text-[0.75rem]">Follow</a></span>
+                </div>
+                <div class="controlPart sm:pl-4 md:pl-2 pr-4 flex flex-wrap">
+                    <ul class="flex justify-center items-center">
+                        <li class="w-[0.8rem] flex-[0_0_0.8rem]"><a href="#"><img
+                                    src="./src/images/player-icon/shuffle.webp" alt="shuffle" loading="lazy" /></a></li>
+                        <li class="px-2 sm:px-2 md:px-1 xl:px-2 2xl:px-2"><a href="#"
+                                class="flex justify-center items-center bg-[#52534d] w-[1.28rem] h-[1.28rem] rounded-full"><img
+                                    src="./src/images/player-icon/skipBack.webp" alt="skipBack" loading="lazy" /></a>
+                        </li>
+                        <li class="px-2 sm:px-2 md:px-1 xl:px-2 2xl:px-2"><a href="#" id="playBtn"
+                                class="w-[2.03rem] h-[2.03rem] leading-[2.03rem] bg-white text-center  flex justify-center items-center rounded-full"><img
+                                    src="./src/images/player-icon/play.webp" alt="play" loading="lazy" class=""
+                                    id="playIcon" /></a>
+                        </li>
+                        <li class="px-2 sm:px-2 md:px-1 xl:px-2 2xl:px-2"><a href="#"
+                                class="flex justify-center items-center bg-[#52534d] w-[1.28rem] h-[1.28rem] rounded-full"><img
+                                    src="./src/images/player-icon/skipFwd.webp" alt="skipFwd" loading="lazy" /></a></li>
+                        <li class="w-[0.8rem] flex-[0_0_0.8rem]"><a href="#"><img
+                                    src="./src/images/player-icon/repeat.webp" alt="repeat" loading="lazy" /></a>
+                        </li>
+                    </ul>
+                    <audio id="myAudio" class="hidden" src="./src/music.mp3"></audio>
+                    <div class="w-full relative overflow-hidden bg-white h-0.5 mt-4">
+                        <span class="absolute left-0 top-0 w-20 bg-[#ff2663]  h-0.5"></span>
+                    </div>
+                </div>
+                <div
+                    class="volControl flex items-center w-[3.38rem] sm:w-[4.38rem] md:w-[4.38rem] xl:w-[6.38rem] 2xl:w-[9.38rem]">
+                    <span class='w-[0.88rem] flex-[0_0_0.88rem]'><img src="./src/images/player-icon/vol.webp" alt="vol"
+                            loading="lazy" class="w-full " /></span>
+                    <div class="mx-3 w-2xl relative overflow-hidden bg-white h-0.5">
+                        <span
+                            class="absolute left-0 top-0 md:w-1/5 lg:w-1/5 xl:w-1/5 2xl:w-20 bg-[#ff2663]  h-0.5"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headRight flex justify-between items-center">
+            <span class="inline-block pr-4">
+                <a href="#"
+                    class="w-auto px-8  h-[2.44rem] leading-[2.44rem] border-1 border-[#C6FF00] text-center  block rounded-full text-[#C6FF00] transition-colors duration-300 hover:bg-[#C6FF00] hover:text-black">
+                    Explore Premium
+                </a>
+            </span>
+
+            <span class="inline-block pl-3">
+                <a href="#"
+                    class="group block group w-[1.81rem] h-[1.81rem] rounded-full flex justify-center items-center transition-colors duration-300 bg-white hover:bg-black">
+                    <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-current text-[#6F6F6F] group-hover:text-[#fff]">
+                        <path
+                            d="M2.75 11.875V6.25C2.75 5.25544 3.14509 4.30161 3.84835 3.59835C4.55161 2.89509 5.50544 2.5 6.5 2.5C7.49456 2.5 8.44839 2.89509 9.15165 3.59835C9.85491 4.30161 10.25 5.25544 10.25 6.25V11.875M2.75 11.875H10.25M2.75 11.875H1.5M10.25 11.875H11.5M5.875 13.75H7.125"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M6.5 2.5C6.84518 2.5 7.125 2.22018 7.125 1.875C7.125 1.52982 6.84518 1.25 6.5 1.25C6.15482 1.25 5.875 1.52982 5.875 1.875C5.875 2.22018 6.15482 2.5 6.5 2.5Z"
+                            stroke-width="1.5" />
+                    </svg>
+
+                </a>
+            </span>
+
+            <span class="inline-block pl-3">
+                <a href="#"
+                    class="group block group w-[1.81rem] h-[1.81rem] rounded-full flex justify-center items-center transition-colors duration-300 bg-white hover:bg-black">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="stroke-current text-[#6F6F6F] group-hover:text-[#fff]">
+                        <path
+                            d="M10.115 10.0941L13 13M11.6667 6.33333C11.6667 9.27887 9.27887 11.6667 6.33333 11.6667C3.38781 11.6667 1 9.27887 1 6.33333C1 3.38781 3.38781 1 6.33333 1C9.27887 1 11.6667 3.38781 11.6667 6.33333Z"
+                            stroke-width="1.40097" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </span>
+
+            <span class="inline-block pl-5">
+                <a href="#" class="block">
+                    <img src="./src/images/artist/4.webp" alt="skipBack" loading="lazy"
+                        class="rounded-full w-[2.75rem] h-[2.75rem]" />
+                </a>
+            </span>
+
+            <span
+                class=" sm:hidden inline-block ml-3 sm:ml-3 md:ml-3 xl:pl-3 2xl:pl-4 cursor-pointer font-semibold text-xl hover:text-[#ff2663] transition-colors"
+                onclick="toggleMenu()"><i class="bi bi-list" id="navBtn"></i></span>
+        </div>
+    </header>
+
+    <section class="homeBody flex flex-wrap px-0 sm:px-5 py-4 items-start justify-end pb-0">
+        <nav
+            class="menu bg-[#2A2929] py-3 px-3 rounded-0 sm:rounded-xl w-full sm:block flex-[0_0_auto] sm:w-[11.63rem] sm:flex-[0_0_11.63rem] fixed right-[-100%] sm:left-5 top-[4.5rem] sm:top-[7.2rem] h-[100vh] sm:h-screen z-10 transition-all">
+
+            <div class="searchBox relative sm:hidden px-3 mt-4 mb-4">
+                <input type="text" placeholder="Search music, artist"
+                    class="w-full h-[2.50rem] text-xs rounded-full border-1 border-[#d3d3d3a1] border-solid bg-[linear-gradient(135deg,rgba(211,211,211,0.2)_0%,rgba(152,152,152,0.2)_100%)] text-[#d3d3d3] px-5 py-0" />
+                <button type="submit"
+                    class="w-[1.81rem] h-[1.81rem] leading-[1rem] border-0 bg-white text-center  inline-block rounded-full absolute top-1.5 right-5 cursor-pointer">
+                    <svg width="15" height="15" viewBox="0 0 15 15" class="inline-block" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.8147 10.7916L14.0145 14.0145M12.5357 6.62049C12.5357 9.88737 9.88739 12.5357 6.62051 12.5357C3.35364 12.5357 0.705322 9.88737 0.705322 6.62049C0.705322 3.35362 3.35364 0.705299 6.62051 0.705299C9.88739 0.705299 12.5357 3.35362 12.5357 6.62049Z"
+                            stroke="#6F6F6F" stroke-width="1.40097" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <ul>
+                <li class="mb-3"><a href="index.html"
+                        class="group py-2 px-2 flex w-full items-center rounded-[0.3rem_0_0_0.3rem]
+                                                     text-white text-xs sm:text-xs md:text-[0.94rem] font-medium hover:bg-[#505736] hover:shadow-[-3px_0px_0px_0px_#C6FF00_inset] transition-colors">
+                        <span class="w-[1.36rem] flex-[0_0_1.36rem] text-center mr-2">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                class="stroke-current text-[#fff] transition-colors group-hover:text-[#C6FF00]">
+                                xmlns=" http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.8889 8.38889V18C17.8889 19.1046 16.9935 20 15.8889 20H5.11111C4.00654 20 3.11111 19.1046 3.11111 18V8.38889M20 10.5L10.5 1L1 10.5"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </span>
+                        Home</a>
+                </li>
+
+                <li class="mb-3"><a href="#"
+                        class="group py-2 px-2 flex w-full items-center rounded-[0.3rem_0_0_0.3rem]
+                                                    text-xs sm:text-xs md:text-[0.94rem] font-medium bg-[#505736] shadow-[-3px_0px_0px_0px_#C6FF00_inset] text-[#C6FF00] transition-colors">
+                        <span class="w-[1.36rem] flex-[0_0_1.36rem] text-center  mr-2">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="fill-current text-[#C6FF00] transition-colors group-hover:text-[#C6FF00]">
+                                <path
+                                    d="M2.65659 0H4.42765V16H2.65659V0ZM0 0H1.77106V16H0V0ZM5.31318 0H7.08424V16H5.31318V0ZM13.3379 15.8151L7.8272 0.801778L9.48934 0.186667L15 15.2L13.3379 15.8151Z" />
+                            </svg>
+                        </span> My
+                        library <i class="bi bi-chevron-down ml-3 !text-white"></i></a>
+                    <ul class="bg-black pl-10 pt-2 pb-2 border border-1 border-[#373737] rounded-[0_0_0.8rem_0.8rem]">
+                        <li><a href="songs-library.html"
+                                class="text-[#979797] hover:text-white transition-colors mb-2 block font-medium text-sm">Songs</a>
+                        </li>
+                        <li><a href="album-library.html"
+                                class="text-[#979797] hover:text-white transition-colors mb-2 block font-medium text-sm">Albums</a>
+                        </li>
+                        <li><a href="artist-library.html"
+                                class="text-[#979797] hover:text-white transition-colors mb-2 block font-medium text-sm">Artist</a>
+                        </li>
+                        <li><a href="purchase-library.html"
+                                class="text-[#979797] hover:text-white transition-colors font-medium text-sm">Liked</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-3"><a href="artist-listing.html"
+                        class="group py-2 px-2 flex w-full items-center rounded-[0.3rem_0_0_0.3rem]
+                                                     text-white text-xs sm:text-xs md:text-[0.94rem] font-medium hover:bg-[#505736] hover:shadow-[-3px_0px_0px_0px_#C6FF00_inset]">
+                        <span class="w-[1.36rem] flex-[0_0_1.36rem] text-center  mr-2">
+                            <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="fill-current text-[#fff] transition-colors group-hover:text-[#C6FF00]">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.0006 0C9.07218 0 6.69824 2.37394 6.69824 5.30233C6.69824 8.23072 9.07218 10.6047 12.0006 10.6047C14.9289 10.6047 17.3029 8.23072 17.3029 5.30233C17.3029 2.37394 14.9289 0 12.0006 0ZM8.37266 5.30233C8.37266 3.29868 9.99698 1.67442 12.0006 1.67442C14.0042 1.67442 15.6285 3.29868 15.6285 5.30233C15.6285 7.30597 14.0042 8.93023 12.0006 8.93023C9.99698 8.93023 8.37266 7.30597 8.37266 5.30233Z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.64962 5.0992C1.53747 4.65063 1.08292 4.3779 0.634359 4.49004C0.185782 4.60218 -0.086947 5.05674 0.0251944 5.50531L0.45158 7.21084C1.23829 10.3577 3.62349 12.8367 6.69788 13.7622V18.7557C6.69784 19.7586 6.69781 20.5949 6.78708 21.2589C6.88129 21.9597 7.08855 22.5924 7.59698 23.1008C8.10542 23.6092 8.73812 23.8165 9.43892 23.9107C10.1029 24 10.9392 23.9999 11.9422 23.9999H12.0583C13.0613 23.9999 13.8976 24 14.5615 23.9107C15.2623 23.8165 15.8949 23.6092 16.4034 23.1008C16.9119 22.5924 17.1191 21.9597 17.2134 21.2589C17.3026 20.5949 17.3026 19.7586 17.3026 18.7557V14.0751C18.3977 14.4016 19.2344 15.3531 19.3739 16.54L20.0989 22.7024C20.153 23.1616 20.569 23.4901 21.0282 23.4361C21.4875 23.3821 21.8159 22.9659 21.7619 22.5068L21.037 16.3443C20.7641 14.0261 18.7995 12.279 16.4653 12.279H7.62943C4.90186 11.6387 2.75673 9.52763 2.076 6.80472L1.64962 5.0992ZM8.3723 18.6976V13.9534H15.6281V18.6976C15.6281 19.7737 15.6263 20.4966 15.5538 21.0358C15.4846 21.5509 15.3649 21.7714 15.2195 21.9168C15.0739 22.0623 14.8534 22.182 14.3384 22.2513C13.7991 22.3237 13.0763 22.3255 12.0002 22.3255C10.9241 22.3255 10.2012 22.3237 9.66203 22.2513C9.14692 22.182 8.92645 22.0623 8.78098 21.9168C8.63552 21.7714 8.51582 21.5509 8.44656 21.0358C8.37407 20.4966 8.3723 19.7737 8.3723 18.6976Z" />
+                            </svg>
+
+                        </span>
+                        Artists</a></li>
+                <li class="mb-3"><a href="store.html"
+                        class="group py-2 px-2 flex w-full items-center rounded-[0.3rem_0_0_0.3rem]
+                                                     text-white text-xs sm:text-xs md:text-[0.94rem] font-medium hover:bg-[#505736] hover:shadow-[-3px_0px_0px_0px_#C6FF00_inset]">
+                        <span class="w-[1.36rem] flex-[0_0_1.36rem] text-center mr-2">
+                            <svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="stroke-current text-[#fff] transition-colors group-hover:text-[#C6FF00]">
+                                <path
+                                    d="M15.167 14.3749H22.7503M15.167 18.2082H22.7503M21.9487 4.38906C22.0312 4.46204 22.0967 4.54869 22.1414 4.64406C22.186 4.73944 22.209 4.84166 22.209 4.9449C22.209 5.04813 22.186 5.15036 22.1414 5.24573C22.0967 5.3411 22.0312 5.42775 21.9487 5.50073L21.5912 5.81698L20.5837 6.70823L19.5653 5.8074L19.2078 5.48156C19.1253 5.40859 19.0598 5.32194 19.0151 5.22656C18.9704 5.13119 18.9475 5.02897 18.9475 4.92573C18.9475 4.82249 18.9704 4.72027 19.0151 4.6249C19.0598 4.52953 19.1253 4.44288 19.2078 4.3699C19.2894 4.29717 19.3864 4.23945 19.4933 4.20005C19.6003 4.16066 19.7149 4.14038 19.8307 4.14038C19.9466 4.14038 20.0612 4.16066 20.1681 4.20005C20.275 4.23945 20.3721 4.29717 20.4537 4.3699L20.5837 4.4849L20.7028 4.3699C20.8718 4.22786 21.0971 4.15027 21.3302 4.15386C21.5632 4.15744 21.7854 4.24192 21.9487 4.38906Z"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M7.04167 20.1251C9.13575 20.1251 10.8333 18.6234 10.8333 16.7709C10.8333 14.9185 9.13575 13.4167 7.04167 13.4167C4.94759 13.4167 3.25 14.9185 3.25 16.7709C3.25 18.6234 4.94759 20.1251 7.04167 20.1251Z"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15.1663 9.58333C15.3879 9.27072 15.5358 8.92176 15.6013 8.55736C15.6667 8.19296 15.6483 7.82062 15.5471 7.46267C15.4459 7.10472 15.2641 6.76852 15.0125 6.47422C14.761 6.17993 14.4448 5.9336 14.083 5.75C12.9026 4.88153 11.8148 3.91917 10.833 2.875V16.7708"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        Store</a>
+                </li>
+                <li class="mb-3"><a href="#"
+                        class="group py-2 px-2 flex w-full items-center rounded-[0.3rem_0_0_0.3rem]
+                                                                     text-white text-xs sm:text-xs md:text-[0.94rem] font-medium hover:bg-[#505736] hover:shadow-[-3px_0px_0px_0px_#C6FF00_inset]">
+                        <span class="w-[1.36rem] flex-[0_0_1.36rem] text-center mr-2">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="stroke-current text-[#fff] transition-colors group-hover:text-[#C6FF00]">
+                                <path d="M11.3999 8.99983H1M1 8.99983L3.79997 6.59985M1 8.99983L3.79997 11.3998"
+                                    stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M6.60156 4.99996C6.61125 3.25995 6.68841 2.31763 7.30311 1.70294C8.00607 1 9.13742 1 11.4001 1H12.2001C14.4628 1 15.5942 1 16.2971 1.70294C17.0001 2.40587 17.0001 3.53723 17.0001 5.79995V12.1999C17.0001 14.4626 17.0001 15.5939 16.2971 16.2969C15.6824 16.9116 14.7401 16.9888 12.9999 16.9985M6.60156 12.9999C6.61125 14.7399 6.68841 15.6822 7.30311 16.2969C7.81615 16.8099 8.55734 16.9486 9.79997 16.986"
+                                    stroke-width="1.4" stroke-linecap="round" />
+                            </svg>
+
+                        </span>
+                        Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="flex items-start flex-wrap w-full sm:w-[calc(100%-11.63rem)] justify-end">
+            <div class="bg-[#2B2B2B] rounded-[0.75rem] p-6 sm:w-[calc(100%-1rem)] float-right">
+                <div class="flex justify-between">
+                    <h1 class="text-[1.56rem] font-semibold mb-5">My Albums</h1>
+                    <ul class="flex">
+                        <li><a href="#"
+                                class="bg-[#373437] ml-2 hover:bg-gradient-to-r hover:from-[#D344C9] hover:to-[#2D2694] rounded-[0.50rem] font-medium text-xs text-white px-6 py-2 transition-colors duration-300">Liked</a>
+                        </li>
+                        <li><a href="#"
+                                class="bg-[#373437] ml-2 hover:bg-gradient-to-r hover:from-[#D344C9] hover:to-[#2D2694] rounded-[0.50rem] font-medium text-xs text-white px-5 py-2 transition-colors duration-300">Download</a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="grid grid-cols-1 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 gap-8 overflow-y-auto overflow-x-hidden h-[40rem] [scrollbar-width:none]">
+                    <div class="mb-3 md:mb-0 transition-colors duration-300  rounded-[0.75rem]">
+                        <div class="relative mb-2">
+                            <img src="./src/images/album/1.webp" alt="skipBack" loading="lazy"
+                                class="rounded-[0.75rem] w-full" />
+                        </div>
+                        <h5><a href="#" class="text-sm font-semibold">Maecenas biben</a></h5>
+                        <p class="text-xs text-[#9D9D9D] truncate w-full">Quisque isus laoreet, risus Quisque isus
+                            laoreet, risus </p>
+                        <div class="flex justify-between mt-2 items-center">
+                            <span class=" text-[#F844B0] text-xs">
+                                7 Track
+                            </span>
+                            <ul class="flex text-center">
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-[#191919] w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group border-1 border-[#989898] ">
+                                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
+                                            class="stroke-current text-[#F844B0] group-hover:text-white transition-colors duration-300"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.7998 5.37535L6.58936 7.58579C5.80831 8.36684 4.54199 8.36684 3.76094 7.58579L1.5505 5.37535C0.549575 4.37442 0.549574 2.75161 1.5505 1.75069C2.55142 0.74977 4.17423 0.74977 5.17515 1.75069C6.17607 0.74977 7.79888 0.74977 8.7998 1.75069C9.80073 2.75161 9.80073 4.37442 8.7998 5.37535Z"
+                                                fill="#2F2F2F" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-white w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group ">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="fill-current text-[#4D41FA] group-hover:text-black">
+                                            <path
+                                                d="M2.38357 0.57942C1.09896 1.01023 0.875 3.31888 0.875 4.99793C0.875 6.67698 1.09896 8.93045 2.38357 9.41649C3.66821 9.90253 9.125 6.88687 9.125 4.99793C9.125 3.109 3.75071 0.115472 2.38357 0.57942Z" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-3 md:mb-0 transition-colors duration-300  rounded-[0.75rem]">
+                        <div class="relative mb-2">
+                            <img src="./src/images/album/2.webp" alt="skipBack" loading="lazy"
+                                class="rounded-[0.75rem] w-full" />
+                        </div>
+                        <h5><a href="#" class="text-sm font-semibold">Maecenas biben</a></h5>
+                        <p class="text-xs text-[#9D9D9D] truncate w-full">Quisque isus laoreet, risus Quisque isus
+                            laoreet, risus </p>
+                        <div class="flex justify-between mt-2 items-center">
+                            <span class=" text-[#F844B0] text-xs">
+                                7 Track
+                            </span>
+                            <ul class="flex text-center">
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-[#191919] w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group border-1 border-[#989898] ">
+                                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
+                                            class="stroke-current text-[#F844B0] group-hover:text-white transition-colors duration-300"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.7998 5.37535L6.58936 7.58579C5.80831 8.36684 4.54199 8.36684 3.76094 7.58579L1.5505 5.37535C0.549575 4.37442 0.549574 2.75161 1.5505 1.75069C2.55142 0.74977 4.17423 0.74977 5.17515 1.75069C6.17607 0.74977 7.79888 0.74977 8.7998 1.75069C9.80073 2.75161 9.80073 4.37442 8.7998 5.37535Z"
+                                                fill="#2F2F2F" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-white w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group ">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="fill-current text-[#4D41FA] group-hover:text-black">
+                                            <path
+                                                d="M2.38357 0.57942C1.09896 1.01023 0.875 3.31888 0.875 4.99793C0.875 6.67698 1.09896 8.93045 2.38357 9.41649C3.66821 9.90253 9.125 6.88687 9.125 4.99793C9.125 3.109 3.75071 0.115472 2.38357 0.57942Z" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-3 md:mb-0 transition-colors duration-300  rounded-[0.75rem]">
+                        <div class="relative mb-2">
+                            <img src="./src/images/album/3.webp" alt="skipBack" loading="lazy"
+                                class="rounded-[0.75rem] w-full" />
+                        </div>
+                        <h5><a href="#" class="text-sm font-semibold">Maecenas biben</a></h5>
+                        <p class="text-xs text-[#9D9D9D] truncate w-full">Quisque isus laoreet, risus Quisque isus
+                            laoreet, risus </p>
+                        <div class="flex justify-between mt-2 items-center">
+                            <span class=" text-[#F844B0] text-xs">
+                                7 Track
+                            </span>
+                            <ul class="flex text-center">
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-[#191919] w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group border-1 border-[#989898] ">
+                                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
+                                            class="stroke-current text-[#F844B0] group-hover:text-white transition-colors duration-300"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.7998 5.37535L6.58936 7.58579C5.80831 8.36684 4.54199 8.36684 3.76094 7.58579L1.5505 5.37535C0.549575 4.37442 0.549574 2.75161 1.5505 1.75069C2.55142 0.74977 4.17423 0.74977 5.17515 1.75069C6.17607 0.74977 7.79888 0.74977 8.7998 1.75069C9.80073 2.75161 9.80073 4.37442 8.7998 5.37535Z"
+                                                fill="#2F2F2F" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-white w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group ">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="fill-current text-[#4D41FA] group-hover:text-black">
+                                            <path
+                                                d="M2.38357 0.57942C1.09896 1.01023 0.875 3.31888 0.875 4.99793C0.875 6.67698 1.09896 8.93045 2.38357 9.41649C3.66821 9.90253 9.125 6.88687 9.125 4.99793C9.125 3.109 3.75071 0.115472 2.38357 0.57942Z" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-3 md:mb-0 transition-colors duration-300  rounded-[0.75rem]">
+                        <div class="relative mb-2">
+                            <img src="./src/images/album/1.webp" alt="skipBack" loading="lazy"
+                                class="rounded-[0.75rem] w-full" />
+                        </div>
+                        <h5><a href="#" class="text-sm font-semibold">Maecenas biben</a></h5>
+                        <p class="text-xs text-[#9D9D9D] truncate w-full">Quisque isus laoreet, risus Quisque isus
+                            laoreet, risus </p>
+                        <div class="flex justify-between mt-2 items-center">
+                            <span class=" text-[#F844B0] text-xs">
+                                7 Track
+                            </span>
+                            <ul class="flex text-center">
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-[#191919] w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group border-1 border-[#989898] ">
+                                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
+                                            class="stroke-current text-[#F844B0] group-hover:text-white transition-colors duration-300"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.7998 5.37535L6.58936 7.58579C5.80831 8.36684 4.54199 8.36684 3.76094 7.58579L1.5505 5.37535C0.549575 4.37442 0.549574 2.75161 1.5505 1.75069C2.55142 0.74977 4.17423 0.74977 5.17515 1.75069C6.17607 0.74977 7.79888 0.74977 8.7998 1.75069C9.80073 2.75161 9.80073 4.37442 8.7998 5.37535Z"
+                                                fill="#2F2F2F" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-white w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group ">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="fill-current text-[#4D41FA] group-hover:text-black">
+                                            <path
+                                                d="M2.38357 0.57942C1.09896 1.01023 0.875 3.31888 0.875 4.99793C0.875 6.67698 1.09896 8.93045 2.38357 9.41649C3.66821 9.90253 9.125 6.88687 9.125 4.99793C9.125 3.109 3.75071 0.115472 2.38357 0.57942Z" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-3 md:mb-0 transition-colors duration-300  rounded-[0.75rem]">
+                        <div class="relative mb-2">
+                            <img src="./src/images/album/2.webp" alt="skipBack" loading="lazy"
+                                class="rounded-[0.75rem] w-full" />
+                        </div>
+                        <h5><a href="#" class="text-sm font-semibold">Maecenas biben</a></h5>
+                        <p class="text-xs text-[#9D9D9D] truncate w-full">Quisque isus laoreet, risus Quisque isus
+                            laoreet, risus </p>
+                        <div class="flex justify-between mt-2 items-center">
+                            <span class=" text-[#F844B0] text-xs">
+                                7 Track
+                            </span>
+                            <ul class="flex text-center">
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-[#191919] w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group border-1 border-[#989898] ">
+                                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
+                                            class="stroke-current text-[#F844B0] group-hover:text-white transition-colors duration-300"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.7998 5.37535L6.58936 7.58579C5.80831 8.36684 4.54199 8.36684 3.76094 7.58579L1.5505 5.37535C0.549575 4.37442 0.549574 2.75161 1.5505 1.75069C2.55142 0.74977 4.17423 0.74977 5.17515 1.75069C6.17607 0.74977 7.79888 0.74977 8.7998 1.75069C9.80073 2.75161 9.80073 4.37442 8.7998 5.37535Z"
+                                                fill="#2F2F2F" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-white w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group ">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="fill-current text-[#4D41FA] group-hover:text-black">
+                                            <path
+                                                d="M2.38357 0.57942C1.09896 1.01023 0.875 3.31888 0.875 4.99793C0.875 6.67698 1.09896 8.93045 2.38357 9.41649C3.66821 9.90253 9.125 6.88687 9.125 4.99793C9.125 3.109 3.75071 0.115472 2.38357 0.57942Z" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-3 md:mb-0 transition-colors duration-300  rounded-[0.75rem]">
+                        <div class="relative mb-2">
+                            <img src="./src/images/album/1.webp" alt="skipBack" loading="lazy"
+                                class="rounded-[0.75rem] w-full" />
+                        </div>
+                        <h5><a href="#" class="text-sm font-semibold">Maecenas biben</a></h5>
+                        <p class="text-xs text-[#9D9D9D] truncate w-full">Quisque isus laoreet, risus Quisque isus
+                            laoreet, risus </p>
+                        <div class="flex justify-between mt-2 items-center">
+                            <span class=" text-[#F844B0] text-xs">
+                                7 Track
+                            </span>
+                            <ul class="flex text-center">
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-[#191919] w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group border-1 border-[#989898] ">
+                                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
+                                            class="stroke-current text-[#F844B0] group-hover:text-white transition-colors duration-300"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.7998 5.37535L6.58936 7.58579C5.80831 8.36684 4.54199 8.36684 3.76094 7.58579L1.5505 5.37535C0.549575 4.37442 0.549574 2.75161 1.5505 1.75069C2.55142 0.74977 4.17423 0.74977 5.17515 1.75069C6.17607 0.74977 7.79888 0.74977 8.7998 1.75069C9.80073 2.75161 9.80073 4.37442 8.7998 5.37535Z"
+                                                fill="#2F2F2F" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-white w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group ">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="fill-current text-[#4D41FA] group-hover:text-black">
+                                            <path
+                                                d="M2.38357 0.57942C1.09896 1.01023 0.875 3.31888 0.875 4.99793C0.875 6.67698 1.09896 8.93045 2.38357 9.41649C3.66821 9.90253 9.125 6.88687 9.125 4.99793C9.125 3.109 3.75071 0.115472 2.38357 0.57942Z" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-3 md:mb-0 transition-colors duration-300  rounded-[0.75rem]">
+                        <div class="relative mb-2">
+                            <img src="./src/images/album/2.webp" alt="skipBack" loading="lazy"
+                                class="rounded-[0.75rem] w-full" />
+                        </div>
+                        <h5><a href="#" class="text-sm font-semibold">Maecenas biben</a></h5>
+                        <p class="text-xs text-[#9D9D9D] truncate w-full">Quisque isus laoreet, risus Quisque isus
+                            laoreet, risus </p>
+                        <div class="flex justify-between mt-2 items-center">
+                            <span class=" text-[#F844B0] text-xs">
+                                7 Track
+                            </span>
+                            <ul class="flex text-center">
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-[#191919] w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group border-1 border-[#989898] ">
+                                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
+                                            class="stroke-current text-[#F844B0] group-hover:text-white transition-colors duration-300"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.7998 5.37535L6.58936 7.58579C5.80831 8.36684 4.54199 8.36684 3.76094 7.58579L1.5505 5.37535C0.549575 4.37442 0.549574 2.75161 1.5505 1.75069C2.55142 0.74977 4.17423 0.74977 5.17515 1.75069C6.17607 0.74977 7.79888 0.74977 8.7998 1.75069C9.80073 2.75161 9.80073 4.37442 8.7998 5.37535Z"
+                                                fill="#2F2F2F" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-white w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group ">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="fill-current text-[#4D41FA] group-hover:text-black">
+                                            <path
+                                                d="M2.38357 0.57942C1.09896 1.01023 0.875 3.31888 0.875 4.99793C0.875 6.67698 1.09896 8.93045 2.38357 9.41649C3.66821 9.90253 9.125 6.88687 9.125 4.99793C9.125 3.109 3.75071 0.115472 2.38357 0.57942Z" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-3 md:mb-0 transition-colors duration-300  rounded-[0.75rem]">
+                        <div class="relative mb-2">
+                            <img src="./src/images/album/3.webp" alt="skipBack" loading="lazy"
+                                class="rounded-[0.75rem] w-full" />
+                        </div>
+                        <h5><a href="#" class="text-sm font-semibold">Maecenas biben</a></h5>
+                        <p class="text-xs text-[#9D9D9D] truncate w-full">Quisque isus laoreet, risus Quisque isus
+                            laoreet, risus </p>
+                        <div class="flex justify-between mt-2 items-center">
+                            <span class=" text-[#F844B0] text-xs">
+                                7 Track
+                            </span>
+                            <ul class="flex text-center">
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-[#191919] w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group border-1 border-[#989898] ">
+                                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
+                                            class="stroke-current text-[#F844B0] group-hover:text-white transition-colors duration-300"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.7998 5.37535L6.58936 7.58579C5.80831 8.36684 4.54199 8.36684 3.76094 7.58579L1.5505 5.37535C0.549575 4.37442 0.549574 2.75161 1.5505 1.75069C2.55142 0.74977 4.17423 0.74977 5.17515 1.75069C6.17607 0.74977 7.79888 0.74977 8.7998 1.75069C9.80073 2.75161 9.80073 4.37442 8.7998 5.37535Z"
+                                                fill="#2F2F2F" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-white w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group ">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="fill-current text-[#4D41FA] group-hover:text-black">
+                                            <path
+                                                d="M2.38357 0.57942C1.09896 1.01023 0.875 3.31888 0.875 4.99793C0.875 6.67698 1.09896 8.93045 2.38357 9.41649C3.66821 9.90253 9.125 6.88687 9.125 4.99793C9.125 3.109 3.75071 0.115472 2.38357 0.57942Z" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-3 md:mb-0 transition-colors duration-300  rounded-[0.75rem]">
+                        <div class="relative mb-2">
+                            <img src="./src/images/album/1.webp" alt="skipBack" loading="lazy"
+                                class="rounded-[0.75rem] w-full" />
+                        </div>
+                        <h5><a href="#" class="text-sm font-semibold">Maecenas biben</a></h5>
+                        <p class="text-xs text-[#9D9D9D] truncate w-full">Quisque isus laoreet, risus Quisque isus
+                            laoreet, risus </p>
+                        <div class="flex justify-between mt-2 items-center">
+                            <span class=" text-[#F844B0] text-xs">
+                                7 Track
+                            </span>
+                            <ul class="flex text-center">
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-[#191919] w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group border-1 border-[#989898] ">
+                                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
+                                            class="stroke-current text-[#F844B0] group-hover:text-white transition-colors duration-300"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.7998 5.37535L6.58936 7.58579C5.80831 8.36684 4.54199 8.36684 3.76094 7.58579L1.5505 5.37535C0.549575 4.37442 0.549574 2.75161 1.5505 1.75069C2.55142 0.74977 4.17423 0.74977 5.17515 1.75069C6.17607 0.74977 7.79888 0.74977 8.7998 1.75069C9.80073 2.75161 9.80073 4.37442 8.7998 5.37535Z"
+                                                fill="#2F2F2F" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-white w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group ">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="fill-current text-[#4D41FA] group-hover:text-black">
+                                            <path
+                                                d="M2.38357 0.57942C1.09896 1.01023 0.875 3.31888 0.875 4.99793C0.875 6.67698 1.09896 8.93045 2.38357 9.41649C3.66821 9.90253 9.125 6.88687 9.125 4.99793C9.125 3.109 3.75071 0.115472 2.38357 0.57942Z" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-3 md:mb-0 transition-colors duration-300  rounded-[0.75rem]">
+                        <div class="relative mb-2">
+                            <img src="./src/images/album/2.webp" alt="skipBack" loading="lazy"
+                                class="rounded-[0.75rem] w-full" />
+                        </div>
+                        <h5><a href="#" class="text-sm font-semibold">Maecenas biben</a></h5>
+                        <p class="text-xs text-[#9D9D9D] truncate w-full">Quisque isus laoreet, risus Quisque isus
+                            laoreet, risus </p>
+                        <div class="flex justify-between mt-2 items-center">
+                            <span class=" text-[#F844B0] text-xs">
+                                7 Track
+                            </span>
+                            <ul class="flex text-center">
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-[#191919] w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group border-1 border-[#989898] ">
+                                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
+                                            class="stroke-current text-[#F844B0] group-hover:text-white transition-colors duration-300"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.7998 5.37535L6.58936 7.58579C5.80831 8.36684 4.54199 8.36684 3.76094 7.58579L1.5505 5.37535C0.549575 4.37442 0.549574 2.75161 1.5505 1.75069C2.55142 0.74977 4.17423 0.74977 5.17515 1.75069C6.17607 0.74977 7.79888 0.74977 8.7998 1.75069C9.80073 2.75161 9.80073 4.37442 8.7998 5.37535Z"
+                                                fill="#2F2F2F" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#"
+                                        class="bg-white w-[1.38rem] h-[1.38rem] rounded-full flex justify-center items-center group ">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="fill-current text-[#4D41FA] group-hover:text-black">
+                                            <path
+                                                d="M2.38357 0.57942C1.09896 1.01023 0.875 3.31888 0.875 4.99793C0.875 6.67698 1.09896 8.93045 2.38357 9.41649C3.66821 9.90253 9.125 6.88687 9.125 4.99793C9.125 3.109 3.75071 0.115472 2.38357 0.57942Z" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="py-5 w-full sm:w-[calc(100%-11.63rem)] text-center text-xs md:text-base mt-15 bg-black">
+            &copy; Copyright PR3CIO 2025
+        </footer>
+    </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="src/js/script.js"></script>
+
+
+</html>
