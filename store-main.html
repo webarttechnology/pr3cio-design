@@ -50,8 +50,7 @@
             <div class="musicPlayer md:flex justify-between items-center hidden sm:hidden md:ml-4 xl:ml-8 2xl:ml-12">
                 <span class="w-[3.25rem] flex-[0_0_3.25rem]"><a href="#"><img src="./src/images/player-icon/thumb.webp"
                             alt="pr3cio-logo" loading="lazy" class="w-full rounded-[0.56rem]" /></a></span>
-                <div class="songInfo sm:hidden md:hidden lg:block lg:px-2 xl:px-3 2xl:px-5"
-                    data-modal-target="default-modal" data-modal-toggle="default-modal">
+                <div class="songInfo sm:hidden md:hidden lg:block lg:px-2 xl:px-3 2xl:px-5">
                     <p class="m-0"><strong
                             class="font-semibold md:text-xs lg:text-xs xl:text-sm 2xl:text-sm text-white">love me
                             like you
@@ -88,12 +87,15 @@
                     </div>
                 </div>
                 <div
-                    class="volControl flex items-center w-[3.38rem] sm:w-[4.38rem] md:w-[4.38rem] xl:w-[6.38rem] 2xl:w-[9.38rem]">
+                    class="volControl flex items-center w-[3.38rem] sm:w-[5.38rem] md:w-[5.38rem] xl:w-[8.38rem] 2xl:w-[12.38rem]">
                     <span class='w-[0.88rem] flex-[0_0_0.88rem]'><img src="./src/images/player-icon/vol.webp" alt="vol"
                             loading="lazy" class="w-full " /></span>
                     <div class="mx-3 w-2xl relative overflow-hidden bg-white h-0.5">
                         <span
-                            class="absolute left-0 top-0 md:w-1/5 lg:w-1/5 xl:w-1/5 2xl:w-20 bg-[#ff2663]  h-0.5"></span>
+                            class="absolute left-0 top-0 md:w-1/5 lg:w-1/5 xl:w-2/5 2xl:w-30 bg-[#ff2663]  h-0.5"></span>
+                    </div>
+                    <div class="mx-1" data-modal-target="default-modal" data-modal-toggle="default-modal">
+                        <i class="bi bi-arrows-fullscreen"></i>
                     </div>
                 </div>
             </div>
@@ -2048,7 +2050,7 @@
                 <!-- Modal body -->
                 <div class="space-y-4">
                     <div
-                        class="xl:max-w-[70.44rem] 2xl:max-w-[79.44rem] w-full m-auto border-[#878787] border-1 border-solid rounded-[1.75rem] px-15 py-10 bg-cover bg-no-repeat  bg-[url('./src/images/player-bg.webp')] relative">
+                        class=" w-full m-auto border-[#878787] border-1 border-solid rounded-[1.75rem] px-15 py-10 bg-cover bg-no-repeat  bg-[url('./src/images/player-bg.webp')] relative">
 
                         <button type="button"
                             class="text-gray-400 w-[2.38rem] flex-[0_0_2.38rem] h-[2.38rem] rounded-full flex justify-center items-center border-[#878787] border-1 border-solid absolute top-10 right-10 cursor-pointer"
