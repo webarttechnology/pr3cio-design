@@ -1,23 +1,68 @@
-// music play
-const playBtn = document.getElementById("playBtn");
-const playIcon = document.getElementById("playIcon");
-const audio = document.getElementById("myAudio");
+// সব play button এর জন্য event add করো
+const playBtns = document.querySelectorAll(".playBtn");
+const allAudios = document.querySelectorAll(".myAudio");
 
-let isPlaying = false;
+playBtns.forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
 
-playBtn.addEventListener("click", function (e) {
-  e.preventDefault();
+    const player = btn.closest(".player");
+    if (!player) return;
 
-  if (!isPlaying) {
-    audio.play();
-    playIcon.src = "./src/images/player-icon/pause.webp";
-    isPlaying = true;
-  } else {
-    audio.pause();
-    playIcon.src = "./src/images/player-icon/play.webp";
-    isPlaying = false;
-  }
+    const audio = player.querySelector(".myAudio");
+    const playIcon = btn.querySelector(".playIcon");
+
+    if (!audio || !playIcon) return;
+
+    if (audio.paused) {
+      // অন্য সব audio pause করো
+      allAudios.forEach((a) => {
+        if (a !== audio) {
+          a.pause();
+          const otherPlayer = a.closest(".player");
+          if (otherPlayer) {
+            const otherIcon = otherPlayer.querySelector(".playIcon");
+            if (otherIcon) {
+              otherIcon.src = "./src/images/player-icon/play.webp";
+            }
+          }
+        }
+      });
+
+      audio.play();
+      playIcon.src = "./src/images/player-icon/pause.webp";
+    } else {
+      audio.pause();
+      playIcon.src = "./src/images/player-icon/play.webp";
+    }
+  });
 });
+
+// ✅ Modal বন্ধ হলে audio বন্ধ করো
+const modal = document.getElementById("default-modal");
+const closeBtns = modal?.querySelectorAll("[data-modal-hide]");
+
+if (closeBtns) {
+  closeBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const modalAudios = modal.querySelectorAll(".myAudio");
+      modalAudios.forEach((a) => {
+        a.pause();
+        a.currentTime = 0; // চাইলে শুরুতে reset করে দাও
+        const parent = a.closest(".player");
+        if (parent) {
+          const icon = parent.querySelector(".playIcon");
+          if (icon) {
+            icon.src = "./src/images/player-icon/play.webp";
+          }
+        }
+      });
+    });
+  });
+}
+
+// modal class change observe করা
+observer.observe(modal, { attributes: true, attributeFilter: ["class"] });
 
 // nav
 
