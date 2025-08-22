@@ -118,10 +118,10 @@
                     type="button"><img src="./src/images/artist/4.webp" alt="skipBack" loading="lazy"
                         class="rounded-full w-[2.75rem] h-[2.75rem] inline-block cursor-pointer" />
                     <!-- <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m1 1 4 4 4-4" />
-                    </svg> -->
+                                    viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m1 1 4 4 4-4" />
+                                </svg> -->
                 </button>
                 <!-- Dropdown menu -->
                 <div id="dropdown"
@@ -295,142 +295,196 @@
                         <p class="text-sm font-semibold text-[#9D9D9D]">Join Since 14 nov,2024</p>
                     </div>
                 </div>
-                <div class="planBox">
+                <div class="planBox ">
                     <div
                         class="py-10 px-8 mb-6 bg-size-[100%] bg-no-repeat bg-[url('./src/images/user/bg2.webp')] bg-bottom min-h-[30rem]">
-                        <div
-                            class="grid grid-cols-12 p-8 auto-cols-auto sm:gap-4 md:gap-4 lg:gap-4 xl:gap-6 2xl:gap-4 bg-[linear-gradient(0deg,rgba(248,68,176,1)_0%,rgba(77,65,250,1)_100%)] rounded-[0.75rem] z-0  relative after:content-[''] after:absolute  after:bg-[url('./src/images/user/bg.webp')] after:bg-top after:w-[calc(100%-0.125rem)] after:bg-cover after:bg-no-repeat after:h-[calc(100%-0.125rem)] after:top-[0.0625rem] after:right-[0.0625rem] after:z-[-1] after:rounded-[0.75rem] after:bg-center justify-between">
-                            <span
-                                class="absolute top-[-1rem] left-8 w-[8.00rem] h-[2.00rem] leading-[2.00rem] bg-black rounded-[0.4rem] text-center border-1 border-[#424242] border-solid">Current
-                                Plan</span>
-                            <div class="col-span-5">
-                                <h2 class="text-[1.75rem]">6 Months Access</h2>
-                                <p class="text-[#9D9D9D] text-sm">Porem ipsum dolor sit amet, consectetur adipiscing
-                                    amet,
-                                    consectetur elit.</p>
-                                <a href="#" class="text-[#C6FF00] text-sm my-3 inline-block">Update Now <i
-                                        class="bi bi-chevron-right"></i></a>
-                            </div>
-                            <div class="col-span-7">
-                                <h1 class="text-[2.75rem] text-right">$10.99</h1>
-                            </div>
-
+                        <div class="flex justify-between mb-5">
+                            <h2 class="font-semibold text-[1.56rem] inline-block"><a href="user-profile.html"
+                                    class="inline-block w-[2.38rem] h-[2.25rem] rounded-[0.75rem] border-1 border-[#848484] border-solid mr-2 leading-[2.25rem] text-center text-[1rem]"><i
+                                        class="bi bi-chevron-left"></i></a> Order History
+                            </h2>
+                            <ul class="flex">
+                                <li><a href="#"
+                                        class="flex font-medium text-sm text-[#9D9D9D] transition-colors duration-300">Last
+                                        30 Days
+                                        <span class="inline-block ml-2">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M19.4788 10.9999H8.15343M4.15584 10.9999H2.52051M4.15584 10.9999C4.15584 10.4699 4.36638 9.96167 4.74114 9.58691C5.1159 9.21214 5.62418 9.00161 6.15417 9.00161C6.68417 9.00161 7.19245 9.21214 7.56721 9.58691C7.94197 9.96167 8.15251 10.4699 8.15251 10.9999C8.15251 11.5299 7.94197 12.0382 7.56721 12.413C7.19245 12.7877 6.68417 12.9983 6.15417 12.9983C5.62418 12.9983 5.1159 12.7877 4.74114 12.413C4.36638 12.0382 4.15584 11.5299 4.15584 10.9999ZM19.4788 17.0564H14.2098M14.2098 17.0564C14.2098 17.5865 13.9988 18.0953 13.624 18.4702C13.2491 18.845 12.7407 19.0556 12.2106 19.0556C11.6806 19.0556 11.1723 18.8442 10.7976 18.4694C10.4228 18.0946 10.2123 17.5863 10.2123 17.0564M14.2098 17.0564C14.2098 16.5262 13.9988 16.0183 13.624 15.6435C13.2491 15.2686 12.7407 15.058 12.2106 15.058C11.6806 15.058 11.1723 15.2686 10.7976 15.6433C10.4228 16.0181 10.2123 16.5264 10.2123 17.0564M10.2123 17.0564H2.52051M19.4788 4.94352H16.6326M12.635 4.94352H2.52051M12.635 4.94352C12.635 4.41353 12.8455 3.90525 13.2203 3.53049C13.5951 3.15573 14.1034 2.94519 14.6333 2.94519C14.8958 2.94519 15.1556 2.99688 15.3981 3.0973C15.6405 3.19773 15.8608 3.34493 16.0464 3.53049C16.2319 3.71605 16.3791 3.93635 16.4796 4.17879C16.58 4.42124 16.6317 4.6811 16.6317 4.94352C16.6317 5.20595 16.58 5.4658 16.4796 5.70825C16.3791 5.9507 16.2319 6.171 16.0464 6.35656C15.8608 6.54212 15.6405 6.68932 15.3981 6.78974C15.1556 6.89017 14.8958 6.94186 14.6333 6.94186C14.1034 6.94186 13.5951 6.73132 13.2203 6.35656C12.8455 5.9818 12.635 5.47351 12.635 4.94352Z"
+                                                    stroke="#9D9D9D" stroke-width="1.2" stroke-miterlimit="10"
+                                                    stroke-linecap="round"></path>
+                                            </svg>
+                                        </span></a>
+                                </li>
+                            </ul>
                         </div>
                         <div
-                            class="bg-[linear-gradient(to_right,rgba(77,65,250,1)_0%,rgba(255,38,99,1)_100%)] rounded-[0.63rem] p-8 grid grid-cols-12 auto-cols-auto sm:gap-4 md:gap-4 lg:gap-4 xl:gap-6 2xl:gap-4 my-8">
-                            <div class="md:col-span-9">
-                                <h3 class="text-white text-lg font-bold">Discover the Premium Experience</h3>
-                                <p class="text-white text-base text-[0.94rem]">Unlock exclusive features, content, and
-                                    benefits designed just for our premium members..</p>
+                            class="w-full hover:bg-[#484848] hover:rounded-[0.4rem] grid grid-cols-12 p-5 sm:gap-x-4 md:gap-x-4 lg:gap-x-4 xl:gap-x-4 2xl:gap-x-4 group items-center transition-colors delay-300 hover:border-transparent">
+                            <div class="col-span-8">
+                                <div class="flex items-center">
+                                    <img src="src/images/user/2.webp" alt="artist"
+                                        class="w-[3.25rem] flex-[0_0_3.25rem] h-[4.13rem] rounded-[0.4rem] object-cover inline-block mr-2" />
+                                    <div class="">
+                                        <h6 class="text-sm font-semibold">Maecenas biben</h6>
+                                        <p class="text-xs text-[#9D9D9D] my-1">John coleman</p>
+                                        <p class="text-xs text-[#9D9D9D] my-1">Order ID: 254741</p>
+                                    </div>
+                                </div>
                             </div>
-                            <span class="md:col-span-3 md:text-right"><a href="#"
-                                    class="bg-white text-black rounded-4xl px-4 lg:px-9 text-sm h-[3rem] leading-[3rem] font-semibold inline-block hover:bg-[rgba(249,255,69,0.82)] hover:text-black transition-colors "><img
-                                        src="src/images/user/1.webp" alt="icon" class="inline-block mr-1" />Access
-                                    Premium</a></span>
-                        </div>
-                        <h2 class="text-2xl mb-4 font-semibold">Account</h2>
-                        <div class="w-full">
-                            <a href="edit-profile-info.html"
-                                class="hover:bg-[#484848] hover:rounded-[0.4rem] grid grid-cols-12 p-5 auto-cols-auto sm:gap-4 md:gap-4 lg:gap-4 xl:gap-6 2xl:gap-4 group items-center border-b-1 border-[#393A39] border-solid transition-colors delay-300 hover:border-transparent">
-                                <div class="col-span-10">
-                                    <span
-                                        class="inline-flex rounded-[0.63rem] border-1 border-[#848484] border-solid w-[2.38rem] h-[2.25rem] justify-center items-center mr-2">
-                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                            class="stroke-current text-[#848484] group-hover:text-[#fff] transition-colors delay-300"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.9176 5.50007L15.4176 8.00007M11.251 17.1667H17.9176M4.58431 13.8334L3.75098 17.1667L7.08431 16.3334L16.7393 6.67841C17.0518 6.36586 17.2273 5.94201 17.2273 5.50007C17.2273 5.05813 17.0518 4.63429 16.7393 4.32174L16.596 4.17841C16.2834 3.86596 15.8596 3.69043 15.4176 3.69043C14.9757 3.69043 14.5519 3.86596 14.2393 4.17841L4.58431 13.8334Z"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-
-                                    </span>
-                                    <strong
-                                        class="text-base font-semibold leading-[0.8] inline-block relative top-[-0.4rem]">Edit
-                                        Profile
-                                        Information</strong>
+                            <div class="col-span-4 text-right">
+                                <p class="text-xs text-[#9D9D9D] my-1">Purchased by 20 nov, 2024</p>
+                                <a href="#"
+                                    class="bg-[#191919] w-[1.63rem] h-[1.63rem] rounded-full flex justify-center items-center group float-right mt-5">
+                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none"
+                                        class="stroke-current text-[#4D41FA] group-hover:text-white transition-colors duration-300"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.58594 6.19527L4.26886 8.8782M4.26886 8.8782L6.95179 6.19527M4.26886 8.8782L4.26886 1.90259"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M1.04883 10.4878H7.48785" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-span-12">
+                                <div
+                                    class="grid grid-cols-2 group items-center border-t-1 border-[rgba(255,255,255,0.2)] border-solid pt-2 justify-between mt-3">
+                                    <div class="col-auto text-sm">
+                                        Total Billed
+                                    </div>
+                                    <div class="col-auto text-base font-semibold text-right">
+                                        $ 1.30
+                                    </div>
                                 </div>
-                                <div class="col-span-2 text-right"><i class="bi bi-chevron-right"></i></div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="w-full">
-                            <a href="order-history.html"
-                                class="hover:bg-[#484848] hover:rounded-[0.4rem] grid grid-cols-12 p-5 auto-cols-auto sm:gap-4 md:gap-4 lg:gap-4 xl:gap-6 2xl:gap-4 group items-center border-b-1 border-[#393A39] border-solid transition-colors delay-300 hover:border-transparent">
-                                <div class="col-span-10">
-                                    <span
-                                        class="inline-flex rounded-[0.63rem] border-1 border-[#848484] border-solid w-[2.38rem] h-[2.25rem] justify-center items-center mr-2">
-                                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="fill-current text-[#848484] group-hover:text-[#fff] transition-colors delay-300">
-                                            <path d="M14.418 9.83301V14.4997L17.3346 17.4163" stroke-width="2.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path
-                                                d="M5.47879 8.51571L4.60381 8.52011C4.60621 8.99991 4.99458 9.38829 5.4744 9.3907L5.47879 8.51571ZM8.4442 9.40562C8.92745 9.40805 9.32116 9.01828 9.32359 8.53503C9.32602 8.05179 8.93624 7.65807 8.453 7.65564L8.4442 9.40562ZM6.33886 5.5415C6.33642 5.05826 5.94272 4.66848 5.45947 4.6709C4.97623 4.67334 4.58645 5.06706 4.58888 5.55029L6.33886 5.5415ZM4.79297 14.5C4.79297 14.0168 4.40121 13.625 3.91797 13.625C3.43472 13.625 3.04297 14.0168 3.04297 14.5H4.79297ZM20.1061 24.3527C20.5244 24.1108 20.6673 23.5755 20.4254 23.1571C20.1834 22.7389 19.6481 22.5958 19.2299 22.8379L20.1061 24.3527ZM22.7559 19.3119C22.5138 19.7302 22.6569 20.2654 23.0751 20.5074C23.4935 20.7494 24.0287 20.6064 24.2707 20.1881L22.7559 19.3119ZM6.41502 6.41647C6.07161 6.75647 6.06885 7.31049 6.40886 7.65389C6.74886 7.9973 7.30287 8.00006 7.64627 7.66005L6.41502 6.41647ZM22.424 6.49417C17.9671 2.03727 10.7649 1.99214 6.33752 6.41955L7.57496 7.65699C11.3072 3.92469 17.4014 3.94638 21.1866 7.73161L22.424 6.49417ZM6.33752 6.41955L4.86008 7.89699L6.09751 9.13443L7.57496 7.65699L6.33752 6.41955ZM5.4744 9.3907L8.4442 9.40562L8.453 7.65564L5.48319 7.64072L5.4744 9.3907ZM6.35378 8.51131L6.33886 5.5415L4.58888 5.55029L4.60381 8.52011L6.35378 8.51131ZM14.418 4.875C19.7337 4.875 24.043 9.18426 24.043 14.5H25.793C25.793 8.21776 20.7002 3.125 14.418 3.125V4.875ZM14.418 24.125C9.10223 24.125 4.79297 19.8157 4.79297 14.5H3.04297C3.04297 20.7823 8.13573 25.875 14.418 25.875V24.125ZM19.2299 22.8379C17.8151 23.6563 16.1725 24.125 14.418 24.125V25.875C16.4885 25.875 18.4321 25.3211 20.1061 24.3527L19.2299 22.8379ZM24.043 14.5C24.043 16.2545 23.5743 17.8971 22.7559 19.3119L24.2707 20.1881C25.239 18.5141 25.793 16.5705 25.793 14.5H24.043ZM7.64627 7.66005C9.38622 5.93735 11.7772 4.875 14.418 4.875V3.125C11.2976 3.125 8.46929 4.38256 6.41502 6.41647L7.64627 7.66005Z" />
-                                        </svg>
-
-                                    </span>
-                                    <strong
-                                        class="text-base font-semibold leading-[0.8] inline-block relative top-[-0.4rem]">Purchase
-                                        History</strong>
+                        <div
+                            class="w-full hover:bg-[#484848] hover:rounded-[0.4rem] grid grid-cols-12 p-5 sm:gap-x-4 md:gap-x-4 lg:gap-x-4 xl:gap-x-4 2xl:gap-x-4 group items-center transition-colors delay-300 hover:border-transparent">
+                            <div class="col-span-8">
+                                <div class="flex items-center">
+                                    <img src="src/images/user/2.webp" alt="artist"
+                                        class="w-[3.25rem] flex-[0_0_3.25rem] h-[4.13rem] rounded-[0.4rem] object-cover inline-block mr-2" />
+                                    <div class="">
+                                        <h6 class="text-sm font-semibold">Maecenas biben</h6>
+                                        <p class="text-xs text-[#9D9D9D] my-1">John coleman</p>
+                                        <p class="text-xs text-[#9D9D9D] my-1">Order ID: 254741</p>
+                                    </div>
                                 </div>
-                                <div class="col-span-2 text-right"><i class="bi bi-chevron-right"></i></div>
-                            </a>
+                            </div>
+                            <div class="col-span-4 text-right">
+                                <p class="text-xs text-[#9D9D9D] my-1">Purchased by 20 nov, 2024</p>
+                                <a href="#"
+                                    class="bg-[#191919] w-[1.63rem] h-[1.63rem] rounded-full flex justify-center items-center group float-right mt-5">
+                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none"
+                                        class="stroke-current text-[#4D41FA] group-hover:text-white transition-colors duration-300"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.58594 6.19527L4.26886 8.8782M4.26886 8.8782L6.95179 6.19527M4.26886 8.8782L4.26886 1.90259"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M1.04883 10.4878H7.48785" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-span-12">
+                                <div
+                                    class="grid grid-cols-2 group items-center border-t-1 border-[rgba(255,255,255,0.2)] border-solid pt-2 justify-between mt-3">
+                                    <div class="col-auto text-sm">
+                                        Total Billed
+                                    </div>
+                                    <div class="col-auto text-base font-semibold text-right">
+                                        $ 1.30
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="w-full">
-                            <a href="payment.html"
-                                class="hover:bg-[#484848] hover:rounded-[0.4rem] grid grid-cols-12 p-5 auto-cols-auto sm:gap-4 md:gap-4 lg:gap-4 xl:gap-6 2xl:gap-4 group items-center border-b-1 border-[#393A39] border-solid transition-colors delay-300 hover:border-transparent">
-                                <div class="col-span-10">
-                                    <span
-                                        class="inline-flex rounded-[0.63rem] border-1 border-[#848484] border-solid w-[2.38rem] h-[2.25rem] justify-center items-center mr-2">
-                                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
-                                            class="stroke-current text-[#848484] group-hover:text-[#fff] transition-colors delay-300"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.2513 18.375H6.91797" stroke-width="1.5"
-                                                stroke-linecap="round" />
-                                            <path d="M9.08464 15.125H6.91797" stroke-width="1.5"
-                                                stroke-linecap="round" />
-                                            <path
-                                                d="M15.585 16.7497C15.585 15.7283 15.585 15.2176 15.9023 14.9003C16.2196 14.583 16.7303 14.583 17.7516 14.583C18.773 14.583 19.2837 14.583 19.601 14.9003C19.9183 15.2176 19.9183 15.7283 19.9183 16.7497C19.9183 17.771 19.9183 18.2817 19.601 18.599C19.2837 18.9163 18.773 18.9163 17.7516 18.9163C16.7303 18.9163 16.2196 18.9163 15.9023 18.599C15.585 18.2817 15.585 17.771 15.585 16.7497Z"
-                                                stroke-width="1.5" />
-                                            <path
-                                                d="M24.2516 13.4997C24.2516 9.41416 24.2516 7.37142 22.9824 6.10221C21.7133 4.83301 19.6704 4.83301 15.585 4.83301H11.2516C7.16612 4.83301 5.12337 4.83301 3.85416 6.10221C2.58496 7.37142 2.58496 9.41416 2.58496 13.4997C2.58496 17.5851 2.58496 19.628 3.85416 20.8971C5.12337 22.1663 7.16612 22.1663 11.2516 22.1663H15.585C19.6704 22.1663 21.7133 22.1663 22.9824 20.8971C23.69 20.1895 24.0031 19.2414 24.1417 17.833"
-                                                stroke-width="1.5" stroke-linecap="round" />
-                                            <path d="M2.58496 11.333H8.00163M24.2516 11.333H12.335" stroke-width="1.5"
-                                                stroke-linecap="round" />
-                                        </svg>
-                                    </span>
-                                    <strong
-                                        class="text-base font-semibold leading-[0.8] inline-block relative top-[-0.4rem]">Saved
-                                        Payment Card</strong>
+                        <div
+                            class="w-full hover:bg-[#484848] hover:rounded-[0.4rem] grid grid-cols-12 p-5 sm:gap-x-4 md:gap-x-4 lg:gap-x-4 xl:gap-x-4 2xl:gap-x-4 group items-center transition-colors delay-300 hover:border-transparent">
+                            <div class="col-span-8">
+                                <div class="flex items-center">
+                                    <img src="src/images/user/2.webp" alt="artist"
+                                        class="w-[3.25rem] flex-[0_0_3.25rem] h-[4.13rem] rounded-[0.4rem] object-cover inline-block mr-2" />
+                                    <div class="">
+                                        <h6 class="text-sm font-semibold">Maecenas biben</h6>
+                                        <p class="text-xs text-[#9D9D9D] my-1">John coleman</p>
+                                        <p class="text-xs text-[#9D9D9D] my-1">Order ID: 254741</p>
+                                    </div>
                                 </div>
-                                <div class="col-span-2 text-right"><i class="bi bi-chevron-right"></i></div>
-                            </a>
+                            </div>
+                            <div class="col-span-4 text-right">
+                                <p class="text-xs text-[#9D9D9D] my-1">Purchased by 20 nov, 2024</p>
+                                <a href="#"
+                                    class="bg-[#191919] w-[1.63rem] h-[1.63rem] rounded-full flex justify-center items-center group float-right mt-5">
+                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none"
+                                        class="stroke-current text-[#4D41FA] group-hover:text-white transition-colors duration-300"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.58594 6.19527L4.26886 8.8782M4.26886 8.8782L6.95179 6.19527M4.26886 8.8782L4.26886 1.90259"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M1.04883 10.4878H7.48785" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-span-12">
+                                <div
+                                    class="grid grid-cols-2 group items-center border-t-1 border-[rgba(255,255,255,0.2)] border-solid pt-2 justify-between mt-3">
+                                    <div class="col-auto text-sm">
+                                        Total Billed
+                                    </div>
+                                    <div class="col-auto text-base font-semibold text-right">
+                                        $ 1.30
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="w-full">
-                            <a href="#"
-                                class="hover:bg-[#484848] hover:rounded-[0.4rem] grid grid-cols-12 p-5 auto-cols-auto sm:gap-4 md:gap-4 lg:gap-4 xl:gap-6 2xl:gap-4 group items-center border-b-1 border-[#393A39] border-solid transition-colors delay-300 hover:border-transparent">
-                                <div class="col-span-10">
-                                    <span
-                                        class="inline-flex rounded-[0.63rem] border-1 border-[#848484] border-solid w-[2.38rem] h-[2.25rem] justify-center items-center mr-2">
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="stroke-current text-[#848484] group-hover:text-[#fff] transition-colors delay-300">
-                                            <path
-                                                d="M19.3933 18.5627C18.0991 20.0514 16.3628 21.0874 14.4381 21.5194C12.5133 21.9514 10.5008 21.7568 8.69455 20.9639C6.88826 20.1709 5.38282 18.8211 4.39805 17.1118C3.41329 15.4025 3.0008 13.4231 3.2208 11.4627C3.44063 9.50207 4.28156 7.66313 5.62075 6.21442C6.95995 4.7657 8.72725 3.78311 10.6646 3.41016M14.1683 3.41766C15.4693 3.6682 16.7012 4.19529 17.7808 4.96325C18.8604 5.7312 19.7624 6.72211 20.4258 7.86891C21.0893 9.01572 21.4986 10.2917 21.6262 11.6104C21.7538 12.9292 21.5965 14.2599 21.1652 15.5127"
-                                                stroke-width="1.5" stroke-linecap="round" />
-                                            <path
-                                                d="M10.418 12V10.2125C10.418 9.12862 11.3133 8.25 12.418 8.25C13.5226 8.25 14.418 9.12862 14.418 10.2125V12M9.91797 12H14.918C15.472 12 15.918 12.446 15.918 13V15.75C15.918 16.304 15.472 16.75 14.918 16.75H9.91797C9.36397 16.75 8.91797 16.304 8.91797 15.75V13C8.91797 12.446 9.36397 12 9.91797 12Z"
-                                                stroke-width="1.5" />
-                                        </svg>
-                                    </span>
-                                    <strong
-                                        class="text-base font-semibold leading-[0.8] inline-block relative top-[-0.4rem]">Account
-                                        Privacy</strong>
+                        <div
+                            class="w-full hover:bg-[#484848] hover:rounded-[0.4rem] grid grid-cols-12 p-5 sm:gap-x-4 md:gap-x-4 lg:gap-x-4 xl:gap-x-4 2xl:gap-x-4 group items-center transition-colors delay-300 hover:border-transparent">
+                            <div class="col-span-8">
+                                <div class="flex items-center">
+                                    <img src="src/images/user/2.webp" alt="artist"
+                                        class="w-[3.25rem] flex-[0_0_3.25rem] h-[4.13rem] rounded-[0.4rem] object-cover inline-block mr-2" />
+                                    <div class="">
+                                        <h6 class="text-sm font-semibold">Maecenas biben</h6>
+                                        <p class="text-xs text-[#9D9D9D] my-1">John coleman</p>
+                                        <p class="text-xs text-[#9D9D9D] my-1">Order ID: 254741</p>
+                                    </div>
                                 </div>
-                                <div class="col-span-2 text-right"><i class="bi bi-chevron-right"></i></div>
-                            </a>
+                            </div>
+                            <div class="col-span-4 text-right">
+                                <p class="text-xs text-[#9D9D9D] my-1">Purchased by 20 nov, 2024</p>
+                                <a href="#"
+                                    class="bg-[#191919] w-[1.63rem] h-[1.63rem] rounded-full flex justify-center items-center group float-right mt-5">
+                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none"
+                                        class="stroke-current text-[#4D41FA] group-hover:text-white transition-colors duration-300"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.58594 6.19527L4.26886 8.8782M4.26886 8.8782L6.95179 6.19527M4.26886 8.8782L4.26886 1.90259"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M1.04883 10.4878H7.48785" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-span-12">
+                                <div
+                                    class="grid grid-cols-2 group items-center border-t-1 border-[rgba(255,255,255,0.2)] border-solid pt-2 justify-between mt-3">
+                                    <div class="col-auto text-sm">
+                                        Total Billed
+                                    </div>
+                                    <div class="col-auto text-base font-semibold text-right">
+                                        $ 1.30
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
         </div>

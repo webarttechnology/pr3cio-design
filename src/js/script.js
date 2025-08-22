@@ -1,4 +1,3 @@
-// সব play button এর জন্য event add করো
 const playBtns = document.querySelectorAll(".playBtn");
 const allAudios = document.querySelectorAll(".myAudio");
 
@@ -15,7 +14,6 @@ playBtns.forEach((btn) => {
     if (!audio || !playIcon) return;
 
     if (audio.paused) {
-      // অন্য সব audio pause করো
       allAudios.forEach((a) => {
         if (a !== audio) {
           a.pause();
@@ -38,7 +36,6 @@ playBtns.forEach((btn) => {
   });
 });
 
-// ✅ Modal বন্ধ হলে audio বন্ধ করো
 const modal = document.getElementById("default-modal");
 const closeBtns = modal?.querySelectorAll("[data-modal-hide]");
 
@@ -48,7 +45,7 @@ if (closeBtns) {
       const modalAudios = modal.querySelectorAll(".myAudio");
       modalAudios.forEach((a) => {
         a.pause();
-        a.currentTime = 0; // চাইলে শুরুতে reset করে দাও
+        a.currentTime = 0;
         const parent = a.closest(".player");
         if (parent) {
           const icon = parent.querySelector(".playIcon");
